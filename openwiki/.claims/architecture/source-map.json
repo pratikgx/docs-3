@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:702e356a25f53f434977391bc8be3df5412ba700a67be12963b62e123f459a19",
+  "pageVersion": "sha256:073facfa57820eb84f92da081deac11cb0f47ddbc7c8892eacd97d70ca146a9b",
   "claims": [
     {
       "id": "claim_43df2f0491284959b97b2d63a34dbdde",
@@ -12,7 +12,7 @@
         },
         {
           "resource": "repo://src/docs.json",
-          "version": "repo-file-v1:sha256:dfa8f2781765f4e233d51d5395084bdbbc6641112864b111d656c48eca087b40"
+          "version": "repo-file-v1:sha256:2ab014af6282fa817a74a96dbf9be7aeae32c07ae5d337cc9ed1f6ce8129888a"
         }
       ]
     },
@@ -48,7 +48,7 @@
         },
         {
           "resource": "repo://src/docs.json",
-          "version": "repo-file-v1:sha256:dfa8f2781765f4e233d51d5395084bdbbc6641112864b111d656c48eca087b40"
+          "version": "repo-file-v1:sha256:2ab014af6282fa817a74a96dbf9be7aeae32c07ae5d337cc9ed1f6ce8129888a"
         },
         {
           "resource": "repo://src/docs.json#L2686-L2831",
@@ -94,7 +94,7 @@
       "evidence": [
         {
           "resource": "repo://src/docs.json",
-          "version": "repo-file-v1:sha256:dfa8f2781765f4e233d51d5395084bdbbc6641112864b111d656c48eca087b40"
+          "version": "repo-file-v1:sha256:2ab014af6282fa817a74a96dbf9be7aeae32c07ae5d337cc9ed1f6ce8129888a"
         },
         {
           "resource": "repo://src/oss/deepagents/code/configuration.mdx#L7-L49",
@@ -241,10 +241,60 @@
           "version": "repo-lines-v1:sha256:49106d7232ef65a19f21e4d44815ed607a052da3f3ead66b9af813f76759cdc8:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdlNjYxODhiOTkwODc5NTlkZjlmNjA0ZTJhNmIwODFkZWZkZWMxNGYwZDAwYzEwZjk2NTk5YmZkMDQ5ZmU3ZjgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxMWE5MzRjZTMzMzQ0NzFiMTJlZGRiNjYyMTMxMDEzNTgxNmUzZjA5OWY0MTcwYzU3ODA4OWUyMTdkODBjYTAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjY4Y2ExNWY1NWQ2MWU3MzYxNWYzNDY0Y2FmOWQ0NTMyMGZhY2Q2Zjk5MjA3NTYwNzkwMjNmYzY2YWQzZjZiNDciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQwYzY0MDMwY2VmYWRlZDYyYWIyNDQyMjllNzU2NDZlYjVkOTRjMDI5MzkyNTk3Y2IxYTg1MzMzNDNiNGEzYjYifQ"
         }
       ]
+    },
+    {
+      "id": "claim_4e3c23a8bfe34a36b4ca41dd3c36d008",
+      "statement": "The Test menu separates evaluation concepts in Get started from the Evaluators tab, which contains evaluation types, workspace evaluator management, SDK management, dataset binding, spend controls, and grouped UI/SDK implementation, integration, and improvement guides.",
+      "evidence": [
+        {
+          "resource": "repo://src/docs.json#L1386-L1554",
+          "version": "repo-lines-v1:sha256:4acbacfabc71b0edee46dea64ce90d320999602226a2aab70dee42e0ea74b38d:eyJzZWxlY3RlZExpbmVDb3VudCI6MTY5LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI3NzYxM2ViMTBlMjVjYTk3NmMzZTNkYjUwMDFjNzFjYWQ2N2U2ZTc3MWE1NTBmNDFlZGQ3MTJkZTc4NjRmYjFlIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIxNGZjMDNkZjg1YjE1NzI3ZDg0ZGQ0YmFmNjk1YmM2MTY5ZTgxOTE0N2NmOTQ3N2M0YjRhZTYzNmI2ZmZmN2IyIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI3MDMyMWNhNWU3ZDhlNDk5ZGRmMjczMDgyMmVmNGU5NWM4YmZkYTAxODRiZDZjZGNmNmFlMGI3OWMyYTQwZDhlIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJiYTA4ZjI0MGYwNDIxMTJhODhmOGQyZGFjNjk2YzBhNzYwMWYzN2NkZmJiNmM0OWRkZGEyYjg5MTM1ZjU5Y2JkIn0"
+        },
+        {
+          "resource": "repo://src/langsmith/evaluation-concepts.mdx#L19-L46",
+          "version": "repo-lines-v1:sha256:35d393b85db12b57252b57b3be023d7219a108affcfad720be5190a71b6aaacb:eyJzZWxlY3RlZExpbmVDb3VudCI6MjgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFlNDUwMjczOWY4NjRkN2I3NzMyMjNiZTQ3YTRhNmQxMDI4YjY0NWM1MTdiODA0OTAzMmRjN2YxOTc3MWQzNTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEyMWYxYzEzNzNhZGJhMTJiOTIwMDYzOGExOWQ3MzMwZGQ0YjIzZjJjNjdiNjJlMDIyNjQ2MDZiZTUwNDM4N2UiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjE4MTQ3M2QwYWQ5N2FlODhiMjY5N2Y3OGIxYWYxMWU0NmU3ZDAwN2JkMmU3Yjc1YjViZmZiNjhhNTM1ZDViZmUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU4Y2Y5YzlkYzIzZTU0YjZmM2ZhNGUwNWI4ZjI4N2JlZTJhOTUyYjhmNTI0MGI1OTkxMDdmNDFjZDhiMGM5MzEifQ"
+        },
+        {
+          "resource": "repo://src/langsmith/evaluation-types.mdx#L6-L11",
+          "version": "repo-lines-v1:sha256:aa4175f90186019d172bc1e1e59d80527c30c8d921d69d32937fd77e4d743ba8:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZjJiN2M0Y2JkMWM1NmFkOTRjYmQxODE4MzQyOTlkOTM5MDA4MDc1MjczOWM1NWE3NzIxYjc5Nzc3ZTVmZGM4ZiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOWQ1MGM5YWNlNDY2NzE3OTQ0ZTc1YzFmZmI5MDc3MDJiOWQ5ZWJlZDI3N2EyNDE5MDFjMTI2OWJhNTMzMjQxMiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTY4YmFhOTIzMjJmODdjOWYzMWU2NzdkNDc3OTA1NzdmNGU2M2VhZjdlNmFkMjUzYmQ0MTFjNjA0ZjE3YmMyYyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMTA4N2U1OGViMzZkMTg3OWEyYjkxMDE1N2UzNDE2Zjg0ZDAwYjFiZDg5Mjk1OGMyZDBhMmJjMzE1NWYzMjEwZCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_a4b9f981a2304b6cbaa994aaf3edac2c",
+      "statement": "LangSmith evaluators are reusable workspace-level resources attachable to multiple tracing projects and datasets; attachment-specific settings include sampling, filters, and spend limits, and deletion requires detaching every attached resource first.",
+      "evidence": [
+        {
+          "resource": "repo://src/langsmith/evaluation-concepts.mdx#L162-L175",
+          "version": "repo-lines-v1:sha256:f07d744637993139683478d86c29025c3ce99d14bc91736081c239e59fc297b2:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZiMzNiYjM4YzM2Yjk3M2M1Y2M0ZWRlMTAwN2FkNjBlODgzMDQ5MGNjZTYzZmM4Y2JlODhlNzg0M2Y5NjA3N2IiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjkxMjJkMDMzMzBhZTU5MGViOWJiYzQxZGJmMGYzYjkwMjEzZDhmYTY3NjFjMmNmNTFmYzBmYmM1YTg3NDY1MTUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijc1YzdjZTkwNTAxZGY5YzFkNjRlZmM5Y2FiN2FmNWQ5MjAwOWExYjlkMGM1NzM5Yzc2M2U1Y2U3Nzk5OGE2MjAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjY5ZTkxMjkyYzRhYjgyMTE5NDk4MDdjMTZkNDRiMmI1MTY1ZTAxZjRmNWM0MmYxYTE0ZDg2YjVlYjBiNTAwYzYifQ"
+        },
+        {
+          "resource": "repo://src/langsmith/evaluators.mdx#L163-L170",
+          "version": "repo-lines-v1:sha256:33d2772130439d3ee52e31bafcae3b33e3fe6f1fa7f94d5f45ae3ec46d74d096:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOTM5YzVkZGMyMzIxZjNmOTQwNzlhYzdkYjRiN2Q0YWViMGM0OWI0NDMzYzlkN2RiZjNmNzlkNjdkOThlMzFiYSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMGFmZDMyZTY2NWI5MjZmMTBjNDRhZWZjMmVlNDgxMDQ2MDY2ODE2MDYzZTg2ZjRmYjY5Y2Q3YjIyMWY1ZjQ5OSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNGFjNTBhOGZmYzc1Y2E1MzBlMzNjOWFkYmUwYmFmMDA4MjA5N2E4NDJkNTY2MDIwN2Y5ZjNiMTFkNjM3MzViZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        },
+        {
+          "resource": "repo://src/langsmith/evaluators.mdx#L9-L10",
+          "version": "repo-lines-v1:sha256:961f756395211d486516afa31d93213dcf571bc680c7a6ecfc473d5de1f12fa3:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYzg1MDZiYjdkOGU2ZDRkMzVhZWEzOGI3ZWQzNmZhNzdjMTg2ZjJkODRhNDJiN2QyM2VlMWU2MThhOTM3MTBlMyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYWEwYWFkNTZmNmRmYmM2NjBhNmZiM2U3MGU5YzAwODlkYjQ5ZWE2OWJlNDg3NjM3MmQzNmM0ZWIzYmZhMTU1MyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOGM2M2Y3ZDU1ZjgzMzNhNDFhMDdkMjAxNzU2NTM4MDJiYTFlMDA5ZmEzZjAxZTRmMWMxYzRkMGQ1ZDYxZmE0YSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_539b46f8c55e4fd08ebadcd4cc4e2479",
+      "statement": "The committed LangSmith REST OpenAPI input declares an OpenAPI 3.1 LangSmith API and specifies `X-Api-Key` authentication, while `docs.json` assigns the specification to the `langsmith/smith-api` deployment-generated reference directory.",
+      "evidence": [
+        {
+          "resource": "repo://src/docs.json#L2163-L2171",
+          "version": "repo-lines-v1:sha256:f595cdc28961335939bc94106cccc9a6da75fce1152a715e7961efb2ac957211:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiM2M1YTAzYmI0MDJmNzc5N2ZmNmE2MGM1NWU1ZWViYjA3NWRlMWZiODA2YWZmYjIwZTQwYjI5MzVhOGViYWQ5OCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNmEwYTYwM2UxYjkyZmM1MTYyNDRlOWNiNzkzZjY2NWZjMmFkNzhjZjc0MTQ2NmI5OTBmODkwOGNjYmEyZjRmYyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMzFiY2I3ZmNmYTI5ODM3MWQ2M2YyYjhkNzMyMmE1NTNhZmJkOTZkNTMyZDc3NjJmNDc4ZTljMjU5NDVhYzIyZiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODJiNGYwZTZiYmYyOTBlODE2ODdhZGI5Y2U4ODQzMWE5NWJmZGI3OWMxMzYxYjVjNjY1ZjMyYjk0YWFmYTc5MCJ9"
+        },
+        {
+          "resource": "repo://src/langsmith/langsmith-platform-openapi.json#L1-L6",
+          "version": "repo-lines-v1:sha256:6d070f6259091f056d090cb8463c996e83008ba5c5ec3ea81f61814748368b46:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYTZmYjA4ZmRhMWFjYjk1N2I2MTE2YmQzNzgxMWExZmU0MWEwMTYxMWMwNjMxZWRiZjc4NmQ2ODg5YTI3YTU1YyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNGM0MjI4Nzc0ODZlODg5OWMxNmUzZWQyOWY0OWM0YjM0MDNkNDIwMTU4MTZmMmZiNGYxY2MxMTQ0YzNlZjJiMCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYzQxYTExZDRkOTJjM2IzM2U2Mjg0ZmU5NTIyYTdkNTY2OGM0YjMxZjMxZjYzODA3M2U1ZjQ3Zjc3MTU3ZjVhYSJ9"
+        }
+      ]
     }
   ],
   "verification": {
     "by": "openwiki/0.4.3",
-    "at": "2026-09-25T08:22:07.006Z"
+    "at": "2026-09-27T08:19:59.833Z"
   }
 }

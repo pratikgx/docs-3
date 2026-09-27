@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:c24c38c17f36d62f80284b56157a54ccbac6858e7d8ca5c8349aaefb1932666f",
+  "claims": [
+    {
+      "id": "claim_d13822243b6544f58fda6cbc05c7400c",
+      "statement": "Ordinary LangSmith authored pages emit as one unversioned `/langsmith/...` route family, while `src/docs.json` independently places evaluator management and implementation pages in Test → Evaluators and online evaluator setup pages in Observe → Online evaluators.",
+      "evidence": [
+        {
+          "resource": "repo://AGENTS.md#L67-L69",
+          "version": "repo-lines-v1:sha256:6f3bffb60343e9c771c01982c021ffa4287de866c65772749aebd74b2e4c5423:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiM2EyYTlhYjAzMTY1ODQ2NTVlN2FmNzQ2NmZlZmQ0MTg3N2RkMDAyNzVhN2NkOTlhZjJiZTc4NTUyNzk2OGMxMCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYjFjN2I3MWE2ZjYwMWNlM2I2ZTE3ODk2M2NjOGExNWJjMzNlZGYxM2U2MzdkYTc1ZjQ4NDlhMzNjYjFkYWFhZiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOTE4OTU4ZDA3YmExYjUyMjY0M2IzZjBlMWZhMjVmN2FmMjgyOWQxZTA4ZDZkY2FhNWY3ZmNiNjA2NDEyODhkZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMjBiNDIxNmQyZjQzZTY5Y2JlNjM2ZjBkODA3MmI0NWYyNGFkMzE0Y2U1NzBjNjU0YjNjNzU1NzE4ZjY0ZWM2OSJ9"
+        },
+        {
+          "resource": "repo://src/docs.json#L1505-L1550",
+          "version": "repo-lines-v1:sha256:bd0e8e274ea75c79fb85e62bd82c074c6291856f363f1fc2d0467bea8551bd9b:eyJzZWxlY3RlZExpbmVDb3VudCI6NDYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjEwYzc5YmZjMzFiNzhkOGIxM2ZiZWZkYWNmNjA1Y2YzM2UyOWE1ZWVmYWQwYTcxN2VkMTg5ODIwNWE5NjI3ZTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZkOGUxYTJjZTJkODQ5MmNmYzllMmY2ZmI0NGFjMTM0MDM1ZDEyYTZjOGJhNjdlODU3NWU1OTJmMzk0OWNjOTIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA4MjQwNjRhMjg2ZGVlOTMzMGQ1ZGQyYTg1OGE3ZDY2MTVhZWQzYWI0YTI0YWQ4YWYyZGI2ZGJjNjkzMmJkOTciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImIzZGQ4OTQ0NjZmZjY2YmFmNmMzNTU5ZDY0MmQyOTcyZDA4ZjE5NTJmNjdjMjcwOGEwYjViYjZmMjBhYWU1MjEifQ"
+        },
+        {
+          "resource": "repo://src/docs.json#L2111-L2132",
+          "version": "repo-lines-v1:sha256:f370f4d14437e89bfd91c0115bbd2f6f612775f96571e4de829f6472addc3166:eyJzZWxlY3RlZExpbmVDb3VudCI6MjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjEwYzc5YmZjMzFiNzhkOGIxM2ZiZWZkYWNmNjA1Y2YzM2UyOWE1ZWVmYWQwYTcxN2VkMTg5ODIwNWE5NjI3ZTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZhMGE2MDNlMWI5MmZjNTE2MjQ0ZTljYjc5M2Y2NjVmYzJhZDc4Y2Y3NDE0NjZiOTkwZjg5MDhjY2JhMmY0ZmMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA4MjQwNjRhMjg2ZGVlOTMzMGQ1ZGQyYTg1OGE3ZDY2MTVhZWQzYWI0YTI0YWQ4YWYyZGI2ZGJjNjkzMmJkOTciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijk1ZjJhOWUxNWE4OGEzM2RkNTUxOGZjM2FiNDU2YjU3NWMwN2JiMzZhMTUwMDlhYmMzZWJlNmJjZTViNjE0NzIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_f61ac5703ce34e4bb8cef11fe7c023a8",
+      "statement": "Offline evaluation targets curated dataset examples, which can contain reference outputs, whereas online evaluation targets production runs and threads without reference outputs; this makes reference-based correctness evaluation an offline capability and online evaluation a reference-free quality, safety, format, or behavior concern.",
+      "evidence": [
+        {
+          "resource": "repo://src/langsmith/evaluation-concepts.mdx#L142-L154",
+          "version": "repo-lines-v1:sha256:630ab59b487073de7728b773f62272d94574d318da53e22d9c2b73a146a005bf:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVjNTg5Yjk0NjdmYTE1MmU2OWY3Y2IyODM4NzUwZGJhOTNiNTRkMjEwZWFhYzA3ZDI2MGVjM2YxOWU1MWJmODAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIxNTc2MzE1YjAxNzFmYWRhOWRjYTYxZTZmOTVjYjNlNjBjYzYxYzAxNGY5NDY0NmMyM2VjMDA3YTQxOWY3NzYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjFhOWM0NGFjYWNkYWUyZTk5NmNmMDE0MzJmODgwZTZlYTNmYzE1ZjljYzQ2OWRlOWVhMTlhMmE0NjE4MmNkM2UiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImVhOWJlM2E3ODIwY2I2NGI3YWU1Mjk5OGQyZmM3MjNiOGI0ZTYyNmJlM2ZhYmQyNDIwOTM1Mzk4ZDExYjIzMDUifQ"
+        },
+        {
+          "resource": "repo://src/langsmith/evaluation-concepts.mdx#L19-L42",
+          "version": "repo-lines-v1:sha256:b249c50b2d2372bba1457ceb5bf539dd5d941db657b611224c026ab06c23280e:eyJzZWxlY3RlZExpbmVDb3VudCI6MjQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFlNDUwMjczOWY4NjRkN2I3NzMyMjNiZTQ3YTRhNmQxMDI4YjY0NWM1MTdiODA0OTAzMmRjN2YxOTc3MWQzNTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImUzYzdiYzZhYTRhOWE4ZmY0YWFmODAxYzI0ZmRjMmM1YjE3NzA5Yjk3MzQzYjcxNWIzMTMwYzNjNWIyYTg4YjgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjE4MTQ3M2QwYWQ5N2FlODhiMjY5N2Y3OGIxYWYxMWU0NmU3ZDAwN2JkMmU3Yjc1YjViZmZiNjhhNTM1ZDViZmUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjMwZTRjOGI5MjJjZDFiYWFhMjkyYWYzMDM3NThmZjI0MjU5OWM3ZjczZWEzZDgwM2E3ODdhZDVhN2U1NDFkNzIifQ"
+        },
+        {
+          "resource": "repo://src/langsmith/evaluation-concepts.mdx#L250-L266",
+          "version": "repo-lines-v1:sha256:d419b8c3ebf8e538c1eb04cfb9911827066f86312064f3cd2250d7d707b3c43b:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjExZGM3YWIzNjU4ZjcyMjE5YTUwMzdkZmI4MDMyYmVlYWZmYzJjZDdiYjVmNzkyZDdiZTgzNzJhODRmNWUxYmUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImViYWQ1MjVmNmIzZDNkZTk4NzdmNGM0MDgyZWRjODBkZGY0Yzc0NjE0ZmMwY2EzZmQwNTI4ZDg0Zjg0ZDU5MWUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjE5ZmFkOGU0MDVkZDMxYTEwYTQ5M2RkZWJjMzE3MzFiMDcwNTU5OTJkMmI0ZjQzYWE2ZmM4OWZmYjE4OTYwODciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQ5MTg0YzQwMGE1YWY3NWMyYzhjNTc1YzMxYmM5NTRiYWVkNDc1YjVjNmE0NDg0YjNmNGNjMTMwNzg3ZTE3ZDYifQ"
+        },
+        {
+          "resource": "repo://src/langsmith/evaluation-concepts.mdx#L90-L116",
+          "version": "repo-lines-v1:sha256:39bd5327c403f8d699cbe84aa4b5113a29ec9b16b4d31b5a23cfcd0e47374d91:eyJzZWxlY3RlZExpbmVDb3VudCI6MjcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY3NDc4M2FiNTk5ZTQ1ZGY2MzllMWRlMWYzNDZjZTcwZTIyZWI5NmIzOGUzYWFhZDMxMmY4YzMwMGM4MWQxZTIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc4NzMzNzQ2ZDk2NjYwNTQ1MGIzNGU0YTUzNTJmZTU4ZTgwN2E4ZDM5ZGU3ZmExMDdjZjEzYjgyNWZkNTliNDYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjBmNGVmZjBmZDE5NjExMzNhNWZiN2YxZDY0MDE5MWQ4NTMxYTAzZjBkMDQ5YTFmYmViZjc2ZDM4YzI5NmIzZDEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjIxMDYzNTZhNWI4M2RiYTI0ZjNmMjAwMmZmZDNhYTVlYTkyOTkzNWYyNDgxYzBjNWI2MGIzNTRlM2RmNzE0NmUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_f0c1b1b398074ea1992355109a64f4c0",
+      "statement": "Evaluators are workspace-level resources that can attach to multiple datasets and tracing projects, while attachment-specific configuration includes sampling, filters, and spend limits; shared evaluator edits apply across every attachment and deletion requires detaching every project and dataset.",
+      "evidence": [
+        {
+          "resource": "repo://src/langsmith/evaluation-concepts.mdx#L162-L194",
+          "version": "repo-lines-v1:sha256:96e90431b57e063adf9187b2d9c0e68ae429aa71bfabf2272e57f1f4c9e005ae:eyJzZWxlY3RlZExpbmVDb3VudCI6MzMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZiMzNiYjM4YzM2Yjk3M2M1Y2M0ZWRlMTAwN2FkNjBlODgzMDQ5MGNjZTYzZmM4Y2JlODhlNzg0M2Y5NjA3N2IiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjIxNDkwMmNkNjcyMGVjMWEyZDYxZjgwNDAwODZjMGVhMTQ3N2QzMTk4ZjAwOWFhNzJjMWViYzFlNWQwZjRkNjciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijc1YzdjZTkwNTAxZGY5YzFkNjRlZmM5Y2FiN2FmNWQ5MjAwOWExYjlkMGM1NzM5Yzc2M2U1Y2U3Nzk5OGE2MjAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU4YTAyYTE4YTY0NDExZTQ2NTBkMDA4ZWUyOTQxMzgzYjM2N2RkMmE0MTQ0NDllMTkwNWRlNzA4MWVkNDk5OTYifQ"
+        },
+        {
+          "resource": "repo://src/langsmith/evaluators.mdx#L120-L124",
+          "version": "repo-lines-v1:sha256:6c763778614da2aa723278b346e8d9a4ab9841d850d2bf9ac96c5e3fec994446:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDVkNTNjYzFkNzE2ZmI3YWQyMGIzZjdlYjUyNGNmM2VlMGUyM2Q1NWE1MTFjZDQ3M2FhZWE1ZThjMjcxMDMxOCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZTZhM2EzODdjMWE3MGFkZjg4OTRiZjYyYjU2NmIxYjkyZGI4ZDBkMWQ0ZTAwM2FjNzk1ZTMxMzM2YWQzYzQzZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYmFiMTBkOGE5OGEyN2U5ZmQzNzAxZjY2MmNiYTE3MGJiM2IzZjNhNzQ3MTY4NjI4YjQ2ZWZhMDI2YWEwZWNhNSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMGUxMzRkOWJmNTkyZjYzNTExYTcwNmRmY2M3N2NjZTY4OGVjOWI2ZjJmYTFlMDc3Yzc2OWQ4MmVjNzgyZmFlNSJ9"
+        },
+        {
+          "resource": "repo://src/langsmith/evaluators.mdx#L163-L170",
+          "version": "repo-lines-v1:sha256:33d2772130439d3ee52e31bafcae3b33e3fe6f1fa7f94d5f45ae3ec46d74d096:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOTM5YzVkZGMyMzIxZjNmOTQwNzlhYzdkYjRiN2Q0YWViMGM0OWI0NDMzYzlkN2RiZjNmNzlkNjdkOThlMzFiYSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMGFmZDMyZTY2NWI5MjZmMTBjNDRhZWZjMmVlNDgxMDQ2MDY2ODE2MDYzZTg2ZjRmYjY5Y2Q3YjIyMWY1ZjQ5OSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNGFjNTBhOGZmYzc1Y2E1MzBlMzNjOWFkYmUwYmFmMDA4MjA5N2E4NDJkNTY2MDIwN2Y5ZjNiMTFkNjM3MzViZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_9dc4dbe738174b37a3a5099fcb978147",
+      "statement": "UI or SDK routes support offline LLM-as-a-judge authoring, UI configures online LLM judges, and the SDK does not support creating decision-model evaluators; decision models are configured in the UI for datasets or tracing projects.",
+      "evidence": [
+        {
+          "resource": "repo://src/langsmith/decision-model-evaluator.mdx#L7-L13",
+          "version": "repo-lines-v1:sha256:93161cd05b19d45ff634e3003cab40f38e8f8e8553d7aabe473006fefcee900b:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOTA1NjMyZDViZmU2ODUwNDZmYTBiYzk5ZWRhNTRhYzA1M2ZlYTg2ZTA2YmNkYWFiN2MwMzk1NDA4ZDI0Y2Y4YyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYTYwMzU4MDc2MDFlMTQxYzc4NTVhNzY4OGI4OTk4ODlkOGVlZTg0NjE5NDA5ZTIwOGI1NGVmYmUyNGZhOTUyNSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOWU1YTA2MTQ2M2QwZjNkMzZiYzViYmIyYTIwMDIwY2Y4MTEwNjRiN2M5OTVmMDNiYzI4OWU1MDFmOTEyMTdlNiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZDMyN2IzMDBlNTc4ZTc3YTZjMjIyMTdkMmU3YjEyNWM3YjRhYjI1NzhjZjZjZDAwMTk0NjgzYmNkNmYwNmU3ZiJ9"
+        },
+        {
+          "resource": "repo://src/langsmith/evaluation-types.mdx#L79-L113",
+          "version": "repo-lines-v1:sha256:67d5af28bd0118bcd7fdc845479b83554ee4f0dcbdf182ef25d94b958d5eca5e:eyJzZWxlY3RlZExpbmVDb3VudCI6MzUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJlN2MxZTY5ZDQyYTdmMmQ0MWY0YmUyNDQ4ZDhlNTdmMTRhN2M3NzQ4NGU3NWY0ZTYzMTcwZDcxNzI5NWNkYjYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg4YTZjMmU5N2M4MTg5Y2E3ZTQ5NjBiYzdmOGQ3ZDE1M2I0ZGI5NmFiZDkyZjJkYjQyMzM2N2QxYjU3NGI1N2EiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImYyMTQ5ODY1MTNkZTJjNDNkMGI5YjRkNTYwMTJkNTVjYzUxZTVmODZjOGNlY2NiM2RhMjgwMmQ2OTliMjcwOTAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjZhOGM0MmY5YTIwZmJkMjk4MmQwMDFjNDA2YTA4ZDdlOThlOTkzMmYyMzBkZDlhOGQ5ZDI4YWZkY2NhMzFlY2QifQ"
+        },
+        {
+          "resource": "repo://src/langsmith/llm-as-judge-sdk.mdx#L14-L28",
+          "version": "repo-lines-v1:sha256:eff49d3905b5bf319c271140e92b1e4a457368df7301d3ffbf4d3381ce156eda:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE1YTY2ZjhjZGRmOWRhYTI3OWI1NDI5OTBhOGE2MDg2YjZhMzM1ODQ1M2Q5NzI3ODRlNWNjMDU0ZTNjMWFjM2UiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImUyMzAxMDljODFhNDY1NjE3ODJmOWQ0MGMxYjIzNzVhOTVjMDJkMjM0ZDI3ODVkYzAyZDE0NGM3MDJmOWE0NTAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjhmNjM4MThjYjg4M2M4MDI4ODYzNzlmZGM1MGI3YjRhZDk5OTA3N2E4M2U3MTAwOTg5OTA1MDhmYmU0MzI1NmMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImVhNjQ3NjM4ZTc0YjBhN2UzZjVkN2I3OWY3NDFlZTBhOTQ4Nzc5YTRmZjlkNWM4NDBiMTQwOTYwZmY0M2M0YWIifQ"
+        },
+        {
+          "resource": "repo://src/langsmith/llm-as-judge.mdx#L6-L14",
+          "version": "repo-lines-v1:sha256:1c8954785472f6a91702abe70a8dedc1567a053459d4d9a41be7d32f3c4712c5:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMzY1MmZlMjhhYWU1YTZiZTI5OGQ1MDZlM2ZmOTJkMTA0OTc3ZDNlZTJkMzRkYjkzMWM5Njg0OGViOGRlMTBiNiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYTYwMzU4MDc2MDFlMTQxYzc4NTVhNzY4OGI4OTk4ODlkOGVlZTg0NjE5NDA5ZTIwOGI1NGVmYmUyNGZhOTUyNSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZDdmNDk5ZDNiZjc2YjhhMWQ1NTVhYTIzYTA3MzM0ZjJjMzU0YjNkZTU2Y2RiMTI4YjIxYWRiNzFhOTAyMzRlZCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNGUwMGEyMjBjMGI0Y2Y1MmI0MmZkZWQ4NzFhMmEzOGQxZGYzOTUwZTIwMGIxNTMzODY1ZjYwZWU5MmU1Y2M3NyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_3f1d3d324c904ae199bef961c3ff7b6b",
+      "statement": "Binding an evaluator to a dataset automatically grades new SDK-created experiments in addition to SDK-supplied evaluators, but does not affect experiment runs created before the evaluator was configured.",
+      "evidence": [
+        {
+          "resource": "repo://src/langsmith/bind-evaluator-to-dataset.mdx#L6-L23",
+          "version": "repo-lines-v1:sha256:91dc8fe1aed08576a7171aacb873c92eef888eb9ff13f07fc8d28676da02de5f:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZlNzc0OGM2OTdmOWNlODA5NmEyZmRmZGUxYjBkYmViZTJiZjUwM2VjNDNkYmI3NjM1YmU3ZWRlMzMyNjc4ZTkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE2MDM1ODA3NjAxZTE0MWM3ODU1YTc2ODhiODk5ODg5ZDhlZWU4NDYxOTQwOWUyMDhiNTRlZmJlMjRmYTk1MjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjZjMTJkMmYwNTA5Y2RiY2U5NjM0MjgwOGY4ZWFmYjllMzg1NDE1MWNhMDJiOTQzNTI2MTg3M2FlMDdkMDYxOTAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU3MGQ0ZmZlYWVlOWY3ZDIxZjNlMGIxZTBkNjgzNzdhODdjY2RkNTJkNTQ0OWZmNDllZTdiZjYyMjJlNGViMmIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_e8be3638ee2249f2a60056aef5354b0d",
+      "statement": "A dataset-bound code evaluator receives the experiment `Run` and the dataset `Example`; the Example can provide reference outputs for comparison with the run output.",
+      "evidence": [
+        {
+          "resource": "repo://src/langsmith/bind-evaluator-to-dataset.mdx#L33-L44",
+          "version": "repo-lines-v1:sha256:7c43ee823e95d4655635c3eb50a1d626d6a139efdf0cf36bc99c0fa166abf968:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE0NjRiZDdiMWJmMDg5NGQ5ZGQ5OTJkMjQxZjRkOWQyOGU2ODIxNDBhZDE5M2E4ZjlhNzc2ZTBlYTM5Y2UzZDAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFhYmJiNDQ0MWYxM2VmMThiMDU5N2Q2ZDdjMDc3ZDJmODMzY2ViYjliZjhmYmJmNGRmZWVlNDI2NzQ0MzBkNWQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjAwZDUzNjJlMWFmMDg2NDZjZDhkNjYyYzgyNTIzZWJiNTExZDAyYzM0NDQ3ZjUxYjU3MjNlYzRmM2NmYWYyODIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjFkMzU3M2I2ZDU1Zjc3ZWQ3MTJiZmFmNmI5MDY3MDM1MzBmNTQ4N2Q0ODUwMjU4MTMxYWFlMDNmZTAxMTEyNDcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_89af334801004c6484923770481cd1dd",
+      "statement": "For run-level online evaluators, filters select triggering runs, sampling applies to the filtered population, and backfill can be selected only when creating the rule; backfill is a background job whose progress is available through evaluator logs.",
+      "evidence": [
+        {
+          "resource": "repo://src/langsmith/online-evaluations-llm-as-judge.mdx#L27-L65",
+          "version": "repo-lines-v1:sha256:c25deaf7ee6537f2535691c46013ce8793ed46338ff714aee2bdb7683e3b8585:eyJzZWxlY3RlZExpbmVDb3VudCI6MzksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRiMWE4YjM4NDhjZDczYTc0NzM3NmVlNTAxZDdlYzk5MmNlYTQ3MjRkYzYyMDM4NWQ2YTM2ZmQ2NDQxMjg4OGMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ0OTUyNzBkODZiODk3NzRkM2RkNWUwYzM5ODMyMmJjMjFkMzliZDg2NzQ5NzkwOTUzNDgzYzgzMzI2Yzc1ZWUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjNlYzMzNTBmZWM2MWFjMjhhNDgyYzRmMDQ5ZTY4OTEwZjJjZTNhMDJjMzNhMGE1NTk4MWE2NGY0NDVkM2JmN2QiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImY4MjE3MDU0YmI0ODYyMzYyZDVmNzkxOWNkMzQwNzkyYzg4MjcwMjE5YmMxOTc2OWYwODY4N2FlNzU3ZDk3NzAifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_4625f9c6dd6d4778bad9b29eb279f789",
+      "statement": "Thread-level online evaluation requires a shared thread ID and top-level `messages` lists, waits for the project-level idle interval, assembles and de-duplicates conversation messages, and then evaluates once per completed thread rather than once per trace.",
+      "evidence": [
+        {
+          "resource": "repo://src/langsmith/online-evaluations-multi-turn.mdx#L17-L37",
+          "version": "repo-lines-v1:sha256:7ae2033514814b59d31eaa9cec8ffa3f600337102e9c48be2906e9d93ca8da90:eyJzZWxlY3RlZExpbmVDb3VudCI6MjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjljOGM2ZDMwOWE5ZjAyYTdjNDM0MDIwMzY3MTkyMjA5OWUyZTUyN2RhMWY3NGNhZmYxOTdhM2JmNGZiMTFlZDIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFlZDAzZTRjOGMwM2QyMjI5YTNiZTZkNGE2YmM5M2FhMzBiNGY1NDA4ZTZmYzRkZWZiMjk4YjJmNjBmOTEzNmQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjViZWU5NjYxODM2Mzg5YzNlYzQ4MDk0NGRjOWY3N2Q0ZjQ5MGFmMDk5NDgzNjU1YzEwMmJjMjZlM2I3OTIwZTIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQyZmJmNTg3YWRlMDMyZmE1OGE5OTE3Yjc4ZTU2Njc5MjIwYTQ0ZTc5MGM2ZDdhZGI5NGU4MzQ4NGY5YzQ3NTUifQ"
+        },
+        {
+          "resource": "repo://src/langsmith/online-evaluations-multi-turn.mdx#L42-L57",
+          "version": "repo-lines-v1:sha256:70a666d8393b309ff839ac7c1de9b370db2e9e74239100efd5b2de28f42e6e48:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFmMjc2NGI4MjViNGI5NDE3ZGJmNjM3YTcwYjRlOTViZTAxZTBmNDU2MjYxMzQxODlmNDdkOWIwYzA0NmQwYzQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJlNzg3OTY3ZTMxNjFmNjNlNjEwYjZmNjMzOTIyMTA4ZDU2ODVkYzliYjdkNTliZTY3MzQ5MzYzMWJjYTk0ODYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA0MDNlYjUzNTA5NGNlYTA3Y2QxNWJkYTQ1Mzc1ZTdkMWZkMTc4M2NkNmRlZWY1MzcxOWE1MDNiZjFhMGFiODQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjkzMzExZTk4YmFiYmRlMzJlODg2MzY5OWFiODFlMDE0YjM0MmEzNzAxYjFjZDRiNGUwNTc1ZGExNTNkZWRhN2EifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_ee3b767462cf4854989737869243c83b",
+      "statement": "Online evaluator retention and data-access controls are scoped: opting out of extended retention is available only for projects with base default retention and affects future scored traces; extended feedback, cost, and token statistics are available to run-level but not thread-level evaluators, and chaining depends on an existing feedback key.",
+      "evidence": [
+        {
+          "resource": "repo://src/langsmith/evaluators.mdx#L126-L161",
+          "version": "repo-lines-v1:sha256:86e9c0e1698c54196433fefa53cfeb971038c609e7d60d9444e06c3b8ffe94a3:eyJzZWxlY3RlZExpbmVDb3VudCI6MzYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI0YzkxNjMyYTIyY2ZhNDdiNjZmMTA3NTA2ZDU3OTVmYmYzMDQ3ZDJlMmE5MzMzOGZmYThkMjQ2ZWJjN2I1ZjIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM0YzU2MTgyM2Q1ZjEyODgxM2ZiNjI3MzY4NTZhZTdkZGFiOGQ4YjczMTQ1OWIxNTY3ZDg0YTk5MjFhMDY0ZjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg5ZmM1YmM0YWExM2Y2YzE1NTk0YzhmNTcwZTgwZjM5YzAwMDU0ODFhNDViZDY3MzA5ODg3MDczYTUxZWMxY2QiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjkzZDVlYWIyYTA3Yzg1NTQyYjVkOTllYzA1ZDRmYjUxYmU3MjQyNjAzMWQ5ZjNhMDdiM2I1MjEzMzNkOGJmMjAifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_1ece018e289f46d08b7b77745ced357c",
+      "statement": "Decision-model evaluators map run or example context into state and put grading criteria in typed questions; question names become feedback keys, and Noul, Choice, and Score map respectively to a 0–1 score, selected-option value, and level-index score.",
+      "evidence": [
+        {
+          "resource": "repo://src/langsmith/decision-model-evaluator.mdx#L44-L63",
+          "version": "repo-lines-v1:sha256:190a81ae6afacfcfa3f05153595afbb1ae21cb99a8dd5aa30ff45c0f37d32809:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZlZjBlOGQ3NzRkNzVlMDViYTY4YzM3NTFlNzk3MzUzZTU4ZDY0N2ZiNjA3YzIzNzdkZTViNGVjZGMyYTYyMDIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjExYTVlY2MxN2E2YzIxM2NjYzg3ODhkMjg2OTM2ZmNlNjdiZTM3YjZlYmFmMjhlNTBiZTFhN2FmNWIzZmE3MjEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjNjY2UxYmFkN2JiMDU2MGI0YzFkZDc3NTA5OTZjNTVlZjRhY2IxMTJlZTM0ZjkxNmQxMDBjNjBhMzQyYzYzNjEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU1ZmVlNzJlNzYyMDVkYjU0MTFhY2YxNTEyMjJiMWNjNDJhODlhNDRkM2M4YjdmMTNjYjFlYWRkZDZkOTc2ZTcifQ"
+        },
+        {
+          "resource": "repo://src/langsmith/online-evaluations-decision-models.mdx#L38-L65",
+          "version": "repo-lines-v1:sha256:c67aa2a21a0135fbe9ce9b4ea7fbec92bc0cdf98f9fbf59ebec01ee6aa5307d1:eyJzZWxlY3RlZExpbmVDb3VudCI6MjgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM2NjdjZjUyYjk4OTcxMzBiMDY5YzQ0ZDgwMTQwNmRkOTZkZGJlOTUyYTU2NjljZDJiNWY1NmE1ODY5NDg4ZjYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA5Y2JkYTA2NzYyODZjNWY3MmRmZjhhNGEwMmM2MjU5YTk5NDdjYjEzZDI1N2IxZWM3NzY3Y2NlNjhhMzViNTIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjIxNWNmM2IzMzFkOGU4N2Y3MGUwZGE0MzYwZWJlOGNiZDlkNDVhZWE0MGY3MDAwMDA2YTk4N2FjZGY3MjJiMTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU1YjFlMWY1NWY3NTAxZDJjYWZlMWZiOTZjMjNiMmM5ODA2MzMwMzczYTBlNmI2ZDYwYWVlOTliNjEwMGZmY2IifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_175324b1475b47c2bff33587d8029957",
+      "statement": "SemIf uses LangSmith Gateway without a provider key but is limited to US Free, Developer, and Plus organizations; Jev requires a TypeSafe workspace secret defaulting to `TYPESAFE_API_KEY`, and TypeSafe may retain evaluator prompts and outputs because it does not offer zero data retention.",
+      "evidence": [
+        {
+          "resource": "repo://src/langsmith/decision-model-evaluator.mdx#L19-L35",
+          "version": "repo-lines-v1:sha256:a712f622ce03079668489f77ffd9f6a0899bf60b8406306578af90f810cef00d:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI3OWMwOTAwNTQzYTk1ODExNTNmYWI2YjE4MTY1NTg1N2YzZDI2OTYwMDVkNGFkOThkYzZjYWYzODcxZmMxYmMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNiYmNlMzVmYTI4NWZmNjU5MWU5OTliNmUzOTY5MTIzNDU5MjFiZmIzMDBkMWYwOTlhNWZjZGNmYzlhNzhjYTAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjM4ZTIzM2NhYWUyMDIyYzQ5OTUxMDRkYWNiM2JhY2YzOGI0MWFlODdlNDQ2YWJkYzg4YmE2M2JjNjNlMWIyMTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImZmNWI4YzI5MzYyODYzMzVhZTllZmM2ZGUwNmFmZDI4YWE1ZTYyMmI0ODRkMGI1NWMyODk4NWUyMzA0YjQ4MmIifQ"
+        },
+        {
+          "resource": "repo://src/langsmith/online-evaluations-decision-models.mdx#L17-L35",
+          "version": "repo-lines-v1:sha256:d3269d0d7ab35d9d2db6cc80a5fde5976dc8e03c5bb4e017ce73c057f5ffecb7:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRjOTA0ZjNhMzEwNjdiYjNjNDlkZWY5ZTZmOGVkNDBlN2ZmZGM1OWI5MzE1ZmNiY2EwOGQ4MzY2YzA2MDczZDgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU4MWY3YmRjY2QzMzlhODEzZmM3MDBkMTMzM2RiNmU1NWI2MTI0MzkzN2JjZmU0Yjk3OWY1MDE0ODY5NjlmYTgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImE2ZjMwOWViNjcwN2I5Mjc2NDhjODA3OTg1NGMwYmUxMWZkYjAyZGJiMmQzNmIzZmI0ZjNhMWQ2NzlkODI3OTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjUyYzU2MjI2NGQzNDRkMDI0NDNlODk5ZjlkNzJjYjkxZDRiNGIwMGM0YWYxMDdmY2NlOGUyNDZhMjNkOGYxOTEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_75969a5f6f5e471faa8d522881013097",
+      "statement": "A TypeSafe-compatible endpoint is a saved model configuration with model ID, workspace-secret name, and Base URL for a server implementing the TypeSafe System One API; LangSmith appends `/v1/systemone`, so that suffix must not be included in the Base URL.",
+      "evidence": [
+        {
+          "resource": "repo://src/langsmith/typesafe-compatible-model.mdx#L19-L36",
+          "version": "repo-lines-v1:sha256:76cb41e6e2301bef80490c9636ea042fe2542ba47a6cf3ac5ae4a0bbc87f0286:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBlYzNhMDBmNDhiNDA4OGQ2YjA3NTI2MzU4ODBjNzcxMWNhNGQ2M2Q1YTFkZjg5MTk5ODYxNTVjOTc3ZDZmN2UiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjgxYzlmMDUxNjgzYTZmMjlmMzNjYTEyYjc1Nzg5OWJkMTVkN2VjYjliNjIxY2JjMmI0NzViZWEyOWY3Y2Y5NDkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImJiZTBkMDNjZTEzNDA2Yjg4MjA5OWZiZjE0YWM5MTJkMDkyNDA1YWU0NTNmMDAwMDI2YTRkMDBlM2U5MWRkMmMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRmODI2YmIyOWY4ODYxMzRhN2IzNTZmMDhmZjZlMDc3MjZiYWYzNWI5NzAxOGEwZDliMDJkOTM2Y2FhYjNiYWUifQ"
+        },
+        {
+          "resource": "repo://src/langsmith/typesafe-compatible-model.mdx#L7-L17",
+          "version": "repo-lines-v1:sha256:eeb34845a111da83e7a5c6c89d0d367334d3b43d7c82e2ab4db53c5e33ed5433:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ1NGEzMjk4NDU1ZWJiYmY5NGJiYjAwZGY0Y2RlNzE2ZTRkM2U0ZjUyZTI5MjlmMmNkNDU1MzcxOTgwMDUzMWUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImUwNGYxYzkwZDAwZmU0NzU2ZGY2NDAxNTI0NzBkZmY2OGJmYWM3MTlmZDVkN2I3MzFjYzVkOTY4ZTM2MDE2YTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQ3NzgwZTgzZTY2MWQ0M2I2Y2U3Njg5ZDRkMDQ3ODk0NWViZWM2NjM4ODZiMzRkOGEwMDZmOTMzZDY1ZjdjY2QiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjBmYWY5M2IyNDAxZWMwMWUzNWVmYjI4N2M2MDA1ZDVjNDNlNjJlNzgxNzQ4ZjZiYzUzNGNhYzgzZmY4ZjBiNTkifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_3fcb2353b57b419b9d9928d4fc2c92d1",
+      "statement": "Decision-model evaluators cannot load Prompt Hub prompts, use a custom output schema, or use few-shot examples; few-shot LLM-judge examples instead require mustache prompts and are supported only for run-level evaluators.",
+      "evidence": [
+        {
+          "resource": "repo://src/langsmith/create-few-shot-evaluators.mdx#L12-L25",
+          "version": "repo-lines-v1:sha256:8b2dc3646fb78056ebb93b988952f4c765a136b1c7d218b873ff4fa0a551f98d:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ1NDU3ZmViYjAwM2FiNTdhNGYyMzkyZDE0ZjNmOGUzYTAxMjQ0YTkyZTY5MTYyMjc0YWVmYmVhYjk1YjA2MjMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU2ZDU5MDJlYjMxODY4ODA4OTc2ZDEyMTQ0ZjM1NzkyMDI5OTEwOGYxYWEyOTZjMzg4ZGM3YzUzYTU3MjU4MDkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjFlMGJlMzFiNDJiNzE0OWExMDBjMjI0YjJjMTA1NWE4NWIwNjdjNTU4NTNiNDRlM2YzMmNmYWEzYmQxYzA2ZDMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjE2YjAzM2ZlZTRmZGJiNmNkOTBhZGEyODAzNmU2ZjY3NmE0MzBkMGNkYmM5ZWQ3NzgyMDI1N2FlMDExY2E0NzcifQ"
+        },
+        {
+          "resource": "repo://src/langsmith/decision-model-evaluator.mdx#L26-L28",
+          "version": "repo-lines-v1:sha256:74b2afda642eaa8863ae50187a9c6d40cf44d0e45da106db9172110e7c50b12c:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZWFlOTQwM2U5OWYzMmIxZjBhYmJjNWM4MzhiMjhhNzhlNjY3M2Q3OTJhNWVjYmNkNTU5YzgyMTdkYzk0YWM2NiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNzk1NzZlODBiNWM3YjE2NzM1NGM1NTU2OGU1YTg0YTU0ZWJjZjQ0YmI3YjgyZmY0NjNhNDE1OTM3Mjg3MjBkNyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNmQxNDYxY2Q3ZWMwMzA4ZGE2OTg4YTViYjYwZDI4MDEzOGFkNzVjOTAzMmE0YjEyZGQ0NzhlODFmYTlhOTBmYSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOWY3M2I3NWY3ZjAyNWVmYjM1YzdhZWNlYTEwMjc3YzU5NWU3ZjgzNTlhNzA2ZjFjYWQ5YWVkMjdhZGE3MjExZSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_17488d50fd2440a59e7b91cd12ad30ad",
+      "statement": "`make broken-links-with-anchors` builds the documentation before running Mintlify link checks with anchors and redirects, while `make lint_prose` accepts an optional `FILES` scope for focused prose validation.",
+      "evidence": [
+        {
+          "resource": "repo://Makefile#L111-L118",
+          "version": "repo-lines-v1:sha256:b084cd806a37098a04c0249df00d99d293457dd67c6656a283010ab3907325f9:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZjc4MTgxYmIwM2ZjN2E5YjYyMmMyMjQ3OTc1YTc0ZDIxM2VmODM0MTBjNDI4YWRmY2QwN2E0MTZhNDNiMjRhMyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYmVjYjM4MWFiNzkyZDgyM2YwMTNmODJjNzA2N2ZjZjA2MTQ1NmNjYjY4NTZlMmZhM2QzNmQ0MDY4NmJmOGViNiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNDNiYThmZGRjYWI3ZmViYTEzZDgwMjU3NGRmNTQ5NWIxMmQzZDg3NjkwZmYwZWM3OGM0NjBkZWY5YmRiNWRlYiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZjFjYmY3MGVlODBlNDA3ODk3OGIwZGNiYzA3OGM1NDFjN2Q2N2EyM2MzMWUxNmJiNTc1YjZjOGFhODM1MWYwZCJ9"
+        },
+        {
+          "resource": "repo://Makefile#L168-L182",
+          "version": "repo-lines-v1:sha256:26762ad7e14b0e616b4329515db909f5e55662e46ad3f54c336149d44f25bb4a:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg3MWY4MzMwOTUwZjFjNjg3NzFkMzFmM2E5MWQ4YjVhZjFkMzVjMjdmMjg5MjljODU5NTZiYjdhOWU4MGFkODMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVkZjM2MjI5MWYyYjM1MGIyYWUwZjhhNDMxNTI0MjA3ZTA5ODEzNmM5MGE0MzkwNDQwZDk4OTY5YTVhNzZiMDgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjBhMzAzZmJmOTBlODVkNmE3NGRjMWJlYTYxZTNiNWI2ZTFlMmFlY2I0ZGUzOTRmMzUwYmM0OTBiODJjMTQ1MmYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRiOTVhMGIxODkwMjBkMjhjYjYyYWM0MTZmM2MxNTJlYjY1ZTQxMDI0NWNiZWMzZTI4ZGM0ZjcxNDUwNGY0ODkifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.4.3",
+    "at": "2026-09-27T08:19:59.833Z"
+  }
+}

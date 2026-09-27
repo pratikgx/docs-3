@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:98621c3de48bf743df3e2a5fbb8fc033c28ca15816e3ac1b3c895266284fd283",
+  "pageVersion": "sha256:d69613e04f15dea87f1a532271939fe22b4c77afb11387a9ca4230591a08b4be",
   "claims": [
     {
       "id": "claim_f4c12ebb668943dd8dc42a4000ad79ac",
-      "statement": "Most OSS content (including LangChain, LangGraph, and Deep Agents outside the language-agnostic Code subtree) in /src/oss/ is built twice from a single source: once for Python at /build/oss/python/ and once for JavaScript at /build/oss/javascript/, with language-specific preprocessing that removes non-matching :::python and :::js blocks and rewrites links to include language prefixes.",
+      "statement": "Most OSS content (including LangChain, LangGraph, and Deep Agents outside the language-agnostic Code and OpenWiki subtrees) in /src/oss/ is built twice from a single source: once for Python at /build/oss/python/ and once for JavaScript at /build/oss/javascript/, with language-specific preprocessing that removes non-matching :::python and :::js blocks and rewrites links to include language prefixes.",
       "evidence": [
         {
           "resource": "repo://pipeline/core/builder.py#L104-L122",
@@ -44,7 +44,7 @@
         },
         {
           "resource": "repo://src/docs.json",
-          "version": "repo-file-v1:sha256:dfa8f2781765f4e233d51d5395084bdbbc6641112864b111d656c48eca087b40"
+          "version": "repo-file-v1:sha256:2ab014af6282fa817a74a96dbf9be7aeae32c07ae5d337cc9ed1f6ce8129888a"
         }
       ]
     },
@@ -122,7 +122,7 @@
       "evidence": [
         {
           "resource": "repo://src/docs.json",
-          "version": "repo-file-v1:sha256:dfa8f2781765f4e233d51d5395084bdbbc6641112864b111d656c48eca087b40"
+          "version": "repo-file-v1:sha256:2ab014af6282fa817a74a96dbf9be7aeae32c07ae5d337cc9ed1f6ce8129888a"
         }
       ]
     },
@@ -263,6 +263,6 @@
   ],
   "verification": {
     "by": "openwiki/0.4.3",
-    "at": "2026-09-25T08:22:07.006Z"
+    "at": "2026-09-27T08:19:59.833Z"
   }
 }

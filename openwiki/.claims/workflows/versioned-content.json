@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:050dfc576bf9ef93dee40cc69e8fcdaea1deb126b6dec529ccb85d7960e1d9bd",
+  "pageVersion": "sha256:1ea458619ab05942a42fc9a4b2774d806a168e9a98e2894df41ad9d7cdab9e7f",
   "claims": [
     {
       "id": "claim_7056e7803a2d4e53acbb8ee96db81024",
@@ -166,7 +166,7 @@
       "evidence": [
         {
           "resource": "repo://src/docs.json",
-          "version": "repo-file-v1:sha256:dfa8f2781765f4e233d51d5395084bdbbc6641112864b111d656c48eca087b40"
+          "version": "repo-file-v1:sha256:2ab014af6282fa817a74a96dbf9be7aeae32c07ae5d337cc9ed1f6ce8129888a"
         }
       ]
     },
@@ -303,10 +303,24 @@
           "version": "repo-lines-v1:sha256:756cf1658e5e20ee10533bd7b5c10223fb8853e825f297b450c85ce5c99d5145:eyJzZWxlY3RlZExpbmVDb3VudCI6NDEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFmYmIxNjhhMDE0NjQyOGQ4ODBlYTk3NWNhZjI2ZGRiY2E2NTZkZTU0MTQzNmQxODljYmFhY2Q2ZjIwOWVlMWQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY0MDQyNzM2ZTE0MGNkNzVhOGJmMDljZDhlMDFkZDU3ZTU2YmE3NTQ0MzkwODMyNTdkYmY2ZjNlMmZiODI1MDEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg5MGFhZTYwZjc1ZWE1Mzc1OTQxOTg2NzY2ZDNjODBiN2FlZDhmNmQ2YzBlMzQ4NWIyNmFjZjJiZDY2NDgwODAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjdlZmM3MjJkNTBhNDhhZGQwZmZhNTA0Y2RiMTQwZTc2MDIwMzRjMWY1ZWIwNWFhZTQxYjFhOTA0ZWIzMGI3YTkifQ"
         }
       ]
+    },
+    {
+      "id": "claim_f0765eb5542a464ca3ae84f243b280a9",
+      "statement": "Ordinary LangSmith evaluation content is built as one unprefixed LangSmith page rather than a Python and JavaScript pair; language-prefixed LangSmith routes are reserved for direct Managed Deep Agents sources.",
+      "evidence": [
+        {
+          "resource": "repo://pipeline/core/builder.py#L493-L546",
+          "version": "repo-lines-v1:sha256:e828ffdf4084a7b5cfd9f2dd49284401e5b144073268cf49d80ea70d04c53053:eyJzZWxlY3RlZExpbmVDb3VudCI6NTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjljOWUxMjA3MmZkNjFjZmU5YzJhOGMyMjUwMGY3YThkODUyY2UwY2UzMmZlNWY3NjQ1NDQ5ODhiMWI4MjE5MDAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY0MzgwYTI2NTdhMWUwYzVkMWNkOThmM2E0MzI4MTQxMWZjMjkyNWUzMmQwNGFjZGI5OTVmNGYxOWY1ZTJhNWUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjdkY2JkYzc2NzlhY2YwZjI0ZjMxYzg2NjY1MDQ3OGEyNjQwZmUxNzkwYTQzYTAxN2IxMjBiN2I4ZDY5ZDRjYzUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjhmZWU5YmY5NDdlYmMwOTk5ZTBlNTRiYTgyMWE0ZmY1NTlhZjMzZTc5ZGVlZjE1OTU1YjMwN2JkMjc3MTUzMmIifQ"
+        },
+        {
+          "resource": "repo://src/langsmith/evaluation-concepts.mdx#L1-L46",
+          "version": "repo-lines-v1:sha256:e501ddee751b30134a3e696b6bb776bf72805e7dba65083fc74c9330101df0e9:eyJzZWxlY3RlZExpbmVDb3VudCI6NDYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY1MmQ3MTExMDNkNTBhNDM3ODMwYzZmYmNkMDRmYjRiYWI0OWEwZjgyZjZkMjZkMWM3OTFjNmU4NDg4ZGQwOTAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEyMWYxYzEzNzNhZGJhMTJiOTIwMDYzOGExOWQ3MzMwZGQ0YjIzZjJjNjdiNjJlMDIyNjQ2MDZiZTUwNDM4N2UiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU4Y2Y5YzlkYzIzZTU0YjZmM2ZhNGUwNWI4ZjI4N2JlZTJhOTUyYjhmNTI0MGI1OTkxMDdmNDFjZDhiMGM5MzEifQ"
+        }
+      ]
     }
   ],
   "verification": {
     "by": "openwiki/0.4.3",
-    "at": "2026-09-25T08:22:07.006Z"
+    "at": "2026-09-27T08:19:59.833Z"
   }
 }

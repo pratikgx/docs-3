@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:a3fa6282b78b6799fd5eb04ebd3123d7722dca37c341b89528817f3f3691104e",
+  "pageVersion": "sha256:11e189e79f690da2786f0acbe8f2466b5c7769fd7cd70f2058354ec4ad6c5892",
   "claims": [
     {
       "id": "claim_80e624f4588748b9980bf9abba14af71",
@@ -128,7 +128,7 @@
         },
         {
           "resource": "repo://src/docs.json",
-          "version": "repo-file-v1:sha256:dfa8f2781765f4e233d51d5395084bdbbc6641112864b111d656c48eca087b40"
+          "version": "repo-file-v1:sha256:2ab014af6282fa817a74a96dbf9be7aeae32c07ae5d337cc9ed1f6ce8129888a"
         }
       ]
     },
@@ -273,10 +273,46 @@
           "version": "repo-lines-v1:sha256:83a4357fe58e4f93ae25e7b3e08f298f6d3679e919f60a697aa36583cc68e532:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZjUyZDcxMTEwM2Q1MGE0Mzc4MzBjNmZiY2QwNGZiNGJhYjQ5YTBmODJmNmQyNmQxYzc5MWM2ZTg0ODhkZDA5MCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiN2U2NjE4OGI5OTA4Nzk1OWRmOWY2MDRlMmE2YjA4MWRlZmRlYzE0ZjBkMDBjMTBmOTY1OTliZmQwNDlmZTdmOCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMjJkYTQ2ODg4ZmNkYTJkOTk5NmQwMWYzYmNiOGQyNzcxYzJmZGQ0YmFlZWM3YmRmNDZlOTk1MTM3OGQxZmE3MiJ9"
         }
       ]
+    },
+    {
+      "id": "claim_e772bf7a1bb641fe9320f1512d296d2f",
+      "statement": "The LangSmith REST OpenAPI refresh processor fetches only from the allow-listed api.smith.langchain.com host, writes the committed specification, hides configured fleet and internal operations, normalizes operation titles, and organizes tags into sorted human-readable groups for Mintlify's generated reference navigation.",
+      "evidence": [
+        {
+          "resource": "repo://scripts/process_langsmith_openapi.py#L309-L398",
+          "version": "repo-lines-v1:sha256:26e7566ba459587aa0f7058e90bdc792e7c156d870e78a40366f8abf81df219f:eyJzZWxlY3RlZExpbmVDb3VudCI6OTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA0NTE3MTVhMDk5OGJhZWY3ZTM5M2QwY2UzNTlmMWYwOThlNjAyZTQ1NDcxNmI1ZjdmMGEzMmIyYTU1MjE5MTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE0NzJhZTllNjhlMGJjOWQ0ZWFhOTk1Zjk4MGJmODk2NTkxOWQyMGQ3MTMwYWI2NThkYzU0MTk5Zjg5Mzk4ZTkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQyYjUyN2NkZTI1NTQ1ZWU5YTc3ODEwMDYzOWQ4ZWY2ZjI2NWNhZWQxYWYyYTMzNGUyY2IyMTIyMzI0M2VkNDciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImNhYzM5ZDU1YjFjNDA5YWVlN2MzMThhZThmZWU0ZjEyOWVlODM1OWViMjczNjU3NWJlYmI4MDcxN2E1Mzk2OWQifQ"
+        },
+        {
+          "resource": "repo://scripts/process_langsmith_openapi.py#L39-L47",
+          "version": "repo-lines-v1:sha256:7846b9eefaa037a263f46e64d176ad8d8c111acb18c70d28b578cd7bc15ddc6c:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMjMyNDdiNjkyMjE4MjY1MTRkOWViMzU5YTQ0MDAxNzdhYzE5OTQyZjAyMGFjNmI2ZjcxMjA5MWE0MTg5ZWY0MCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZjQ0ZTVlMWJjNTJlZjVkMjZjYTM3NGVmNDA1ODJmNmQxYzY4ZGZhZTYzZDhhMTdhOTAyNzNhMzk2ZTMxMzNmNSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNTQxNzkzOGE5YmFiZGEyODNhZGM3NThmNzhhNWRmMWE3NWJkZDFmMTNjYTNlMWNkMDI5Y2Q2M2Y0NjEwNDNjNiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMDBjOWM5NGI5YjI2YzdmNTNjNWNiNmQ4NmFhOGQ5NDI4NmQ5MzQ5YTdlOWU4N2Q1MTI3MjJiYjJkMWY5ZTE1YSJ9"
+        },
+        {
+          "resource": "repo://scripts/process_langsmith_openapi.py#L453-L470",
+          "version": "repo-lines-v1:sha256:2b926831cfb0ad72f02602dfdd322ad7728d19e83fa2776b8d2671a3a993938b:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImMyYzU2NjMyNThiZWJjNTkzOWU2NGUwMWM1YjgwZDlmNjI1ZGI0ZDVmN2FhZWQ4MzdhNGMyNDlmYzJjM2Y5M2MiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI4YWMzMGU2OTlkZjY5MDMyNzc1MWU4NTMwMDRjMDgzYmUwMDFkNTdkN2E2NmRiNmQ0MDJkZGNmN2UwM2RjNTIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQ5OTQ3ODRkMGMwNzZkYzJiNmQ4YTMyNzVkY2M3ZGM0ZDBlNWUyODAzOTJkYmUyNDBkNjdjNmUzMTk0ODk2NzQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImM1YWM4MzcxZDVhYTJiNzZiZDU1MzIyZDE3NTU0MWUwOTMwMzVkNDQ3NGM3NGI2NWQ5ODE5ZjE4NmZiODI0MjcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_624937520c5e40bf8f722da6aa9d5413",
+      "statement": "make check-openapi rebuilds and validates only build/langsmith/agent-server-openapi.json with mint openapi-check; it does not validate the LangSmith REST or remote Control Plane specification.",
+      "evidence": [
+        {
+          "resource": "repo://Makefile#L184-L187",
+          "version": "repo-lines-v1:sha256:a35b5d49b5d3f730517d0fdb038f602ea7fa2439fedfb57859a839326ee6a7d4:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOGJiOGJhYjhiMTIwNzVhN2RkOWQ1MGM5Njg2ZGEwMjY2MWE2MDI0NDYzMzU2M2VlODdiYmRjMjdjY2M4YWI0YSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZjU1MDdkNjVhZTY1OGU3OGNiODQ1NmZhMDNjYTlmMWM5MDA3MzIzMDI1MTA4Zjg0NDY0NzRjYTM5YTlkZTRiMyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMGEzMDNmYmY5MGU4NWQ2YTc0ZGMxYmVhNjFlM2I1YjZlMWUyYWVjYjRkZTM5NGYzNTBiYzQ5MGI4MmMxNDUyZiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNzE4ZDkxN2Y0MWEyYjlhYTZjNTllNmZjNWY2YjIxZWVlMTZjMzU2NjcyMThmY2JjODY3ZmM5OWNjZGQyMGRmMSJ9"
+        },
+        {
+          "resource": "repo://src/docs.json#L1644-L1660",
+          "version": "repo-lines-v1:sha256:f27c97fd2775337f546fc60750f46ba853ef6d04bc522dd95d75c676b2ccb95b:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA2OTBkYWVkY2Q1ZWY1ODg5MTIwOWIwYzJjZmFjNDlmODdhNTUxYzE5NzJlZTVjNzJlZmI2NTFlYTljMjJjNzAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU3YTVmZmEzZTA5NWRmMDViNmIzMzMzODcxYWJhMWMxYjNlMjVhYjNkYmYxZDQ5MmYxNTRjMmNjMmIxMjJmNTciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImVjOTNhY2U3YTJkMTMxOGM4NTRkMjZmOGIxZmIwYWMyN2Q1ZmE1MDMxNGVmOGQzNjU1ZDFhOGVlY2U1YTUzMWQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjY3ODkxZTk3NDk5MmY4NTBkOGZlNmNkNGI5ZmM1NzI1NTM4OTdiMmNiYTIwY2JjY2RhNGZjNjg5ZjI0NGM2MjgifQ"
+        },
+        {
+          "resource": "repo://src/docs.json#L2163-L2171",
+          "version": "repo-lines-v1:sha256:f595cdc28961335939bc94106cccc9a6da75fce1152a715e7961efb2ac957211:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiM2M1YTAzYmI0MDJmNzc5N2ZmNmE2MGM1NWU1ZWViYjA3NWRlMWZiODA2YWZmYjIwZTQwYjI5MzVhOGViYWQ5OCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNmEwYTYwM2UxYjkyZmM1MTYyNDRlOWNiNzkzZjY2NWZjMmFkNzhjZjc0MTQ2NmI5OTBmODkwOGNjYmEyZjRmYyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMzFiY2I3ZmNmYTI5ODM3MWQ2M2YyYjhkNzMyMmE1NTNhZmJkOTZkNTMyZDc3NjJmNDc4ZTljMjU5NDVhYzIyZiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODJiNGYwZTZiYmYyOTBlODE2ODdhZGI5Y2U4ODQzMWE5NWJmZGI3OWMxMzYxYjVjNjY1ZjMyYjk0YWFmYTc5MCJ9"
+        }
+      ]
     }
   ],
   "verification": {
     "by": "openwiki/0.4.3",
-    "at": "2026-09-25T08:22:07.006Z"
+    "at": "2026-09-27T08:19:59.833Z"
   }
 }

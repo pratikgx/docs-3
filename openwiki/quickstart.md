@@ -1,13 +1,15 @@
 ---
 type: contributor guide
 title: Quickstart
-description: Set up a local documentation preview, route a change to its authored owner or generator input, and run the smallest relevant validation for current routes and discovery surfaces.
+description: Set up a local documentation preview, route a change to its authored owner or generator input, and run the smallest relevant validation for current routes, LangSmith evaluation documentation, and discovery surfaces.
 tags: [quickstart, documentation, development, validation, mintlify]
 sources:
   - id: openwiki-source-4d9cccca7700db7220ec055e
     resource: repo://.github/workflows/_test.yml
   - id: openwiki-source-164e2da859b5277df81c7d94
     resource: repo://.github/workflows/ci.yml
+  - id: openwiki-source-5153f86e64d6ee0b305f72b3
+    resource: repo://.github/workflows/refresh-langsmith-openapi.yml
   - id: openwiki-source-8037e2358a2c4f9b2c722a11
     resource: repo://AGENTS.md
   - id: openwiki-source-012f2c78e3b1446dfc35803f
@@ -20,16 +22,20 @@ sources:
     resource: repo://pyproject.toml
   - id: openwiki-source-23775c3de52f3ab95a13cb8b
     resource: repo://README.md
+  - id: openwiki-source-697851c98229599f97376bfb
+    resource: repo://scripts/process_langsmith_openapi.py
   - id: openwiki-source-63d8ba810a7c0181c548a307
     resource: repo://scripts/refresh_integration_downloads.py
   - id: openwiki-source-2b15ecffacad911ef9db112f
     resource: repo://scripts/test_code_samples.py
   - id: openwiki-source-a9a8730b7e43a5ad2d0af4f1
     resource: repo://src/docs.json
-generated: { by: "openwiki/0.4.3", at: "2026-09-25T08:22:07.006Z" }
+  - id: openwiki-source-569fb47090d7bb01ef2ae200
+    resource: repo://src/langsmith/evaluation-concepts.mdx
+generated: { by: "openwiki/0.4.3", at: "2026-09-27T08:19:59.833Z" }
 verified:
   - by: openwiki/0.4.3
-    at: 2026-09-25T08:22:07.006Z
+    at: 2026-09-27T08:19:59.833Z
 ---
 
 # Quickstart
@@ -59,7 +65,7 @@ make dev
 
 `make install` synchronizes all Python dependency groups, installs project npm dependencies and the global Mintlify CLI, and links Claude Code skills. Open <http://localhost:3000>. `make dev` performs an initial build, watches `src/`, and starts `mint dev --port 3000` from `build/`. It exits rather than serving stale output when the initial build fails. Use `uv run pipeline dev --skip-build` only when a suitable build already exists; use `make build` for a clean reconstruction.
 
-Read `AGENTS.md` before editing. It is the repository-wide authoring guide. Task-specific procedures live in `.agents/skills/`; Claude Code reads their linked `.claude/skills/` tree, so run `make skills` after adding or renaming a skill.
+Read `AGENTS.md` before editing. It is the repository-wide authoring guide; `CLAUDE.md` points to it. Task-specific procedures live in `.agents/skills/`; Claude Code reads their linked `.claude/skills/` tree, so run `make skills` after adding or renaming a skill.
 
 ## Route the change to its owner
 
@@ -71,12 +77,18 @@ Read `AGENTS.md` before editing. It is the repository-wide authoring guide. Task
 | Language-specific content or integrations | `src/oss/python/` or `src/oss/javascript/` | Only the corresponding language route. |
 | OpenWiki | `src/oss/openwiki/` | One unversioned `/oss/openwiki/...` route. |
 | Deep Agents Code | `src/oss/deepagents/code/` | One unversioned `/oss/deepagents/code/...` route. |
-| Ordinary LangSmith documentation, including Engine | `src/langsmith/` | One unversioned `/langsmith/...` route. `fleet/` is labeled **No-code agents** in navigation. |
+| Ordinary LangSmith documentation, including evaluation and Engine | `src/langsmith/` | One unversioned `/langsmith/...` route. `fleet/` is labeled **No-code agents** in navigation. |
 | Managed Deep Agents | Direct `src/langsmith/managed-deep-agents*.mdx` files | Python and JavaScript `/langsmith/...` variants; unversioned URLs redirect to Python. |
 | Reusable content or assets | `src/snippets/`, `src/images/`, `src/fonts/`, or shared root inputs | Consumers and copied assets after a build. |
 | Mintlify API endpoint reference | Configured OpenAPI spec or remote source | Endpoint pages are created at deployment, not authored MDX or local-build pages. |
 
-The navigation has two products. **AGENT DEVELOPMENT LIFECYCLE** contains Home, Build, Test, Deploy, and Monitor. **PRODUCTS AND SETUP** contains LangSmith setup, LLM Gateway, No-code agents, Engine, and Deep Agents Code. Labels do not establish source ownership: Build combines OSS and LangSmith route families, and the Python and TypeScript Integrations tabs intentionally have different groups. Find a neighboring route in the intended `docs.json` array and mirror its shape deliberately.
+The navigation has two products: **AGENT DEVELOPMENT LIFECYCLE** (Home, Build, Test, Deploy, and Monitor) and **PRODUCTS AND SETUP** (LangSmith setup, LLM Gateway, No-code agents, Engine, and Deep Agents Code). Labels do not establish source ownership: Build combines OSS and LangSmith route families, and the Python and TypeScript Integrations tabs intentionally have different groups. Find a neighboring route in the intended `docs.json` array and mirror its shape deliberately.
+
+### Route LangSmith evaluation work by responsibility
+
+Evaluation pages are ordinary unversioned LangSmith pages, but their public placement is deliberately split by task. **Test → Get started** introduces `evaluation`, `evaluation-quickstart`, `evaluation-concepts`, and `evaluation-approaches`. **Test → Datasets & Experiments** owns dataset creation, evaluation execution, targets, experiment configuration, results, and tutorials. **Test → Evaluators** owns evaluator management, dataset binding, spend, UI and SDK implementation guides, integrations, and evaluator improvement. Production setup is separate under **Monitor → Observe → Online evaluators**.
+
+Before changing an evaluator guide, distinguish the target and lifecycle from implementation details: offline work evaluates dataset examples and produces experiments; online work evaluates production runs or threads. Evaluators are shared workspace-level resources that can attach to datasets and tracing projects, so a documentation change about configuration must preserve whether it applies to the definition, a dataset attachment, or a tracing-project attachment. Use [LangSmith Evaluation Documentation Domain](/openwiki/concepts/langsmith-evaluation.md) for the model and [Changing LangSmith Evaluator Documentation](/openwiki/workflows/langsmith-evaluator-documentation.md) for the connected-page workflow.
 
 For route rules, duplicated OpenWiki placement, Managed Deep Agents navigation and redirects, and the full source map, see [Source Directory Map](/openwiki/architecture/source-map.md) and [Versioned Documentation and Routes](/openwiki/concepts/versioning.md). For adding, moving, or retiring a page, see [Adding and Maintaining Documentation Pages](/openwiki/operations/adding-pages.md).
 
@@ -107,7 +119,7 @@ Do not use output as an alternate source:
   ```
 
   The URL check accepts `https://`, `http://`, or a single-slash site-relative URL; it rejects unsafe schemes and protocol-relative URLs.
-- **OpenAPI:** change the committed specification or configured remote source, not deployment-generated endpoint pages.
+- **OpenAPI:** change the committed specification or configured remote source, not deployment-generated endpoint pages. In particular, the LangSmith REST specification is `src/langsmith/langsmith-platform-openapi.json`; its scheduled workflow refreshes and post-processes it into a reviewable PR. Do not replace that input with hand-authored endpoint MDX.
 
 ## Run the smallest relevant check
 
@@ -124,6 +136,8 @@ Build and inspect the affected route after changing authored pages, navigation, 
 | Integration external links | `uv run python scripts/refresh_integration_downloads.py --check-docs-urls` | Read-only validation of external listing URLs. |
 | Provider overview | `uv run python pipeline/tools/partner_pkg_table.py` | Generated overview agrees with its inputs. |
 
+For an evaluator-doc change, start with the changed source's prose lint, then build and check links and anchors; also inspect the Test or Monitor navigation location if `docs.json` changed. See [Testing Overview](/openwiki/testing/test-overview.md) for boundaries that require a local build, external service, or credentials.
+
 Core CI runs on pushes to `main`, pull requests, and manual dispatch. It invokes the unit-test target and separate lint, link, cross-reference, generated-file, external integration URL, and merge-conflict checks.
 
 ## Before opening a pull request
@@ -131,6 +145,7 @@ Core CI runs on pushes to `main`, pull requests, and manual dispatch. It invokes
 - Confirm the change is in authored content, configuration, metadata, or a generator input—not `build/` or a generated endpoint page.
 - Add navigation for each new authored page in `src/docs.json`; add redirects for moved or retired public routes.
 - Inspect every output variant required by the source family.
+- For LangSmith evaluation changes, check the offline versus online target and the Test versus Monitor ownership before moving a route or generalizing a behavior.
 - Regenerate and review derived files after changing their inputs.
 - Run focused checks and disclose unavailable credentials or live-service dependencies.
 
@@ -138,9 +153,11 @@ Core CI runs on pushes to `main`, pull requests, and manual dispatch. It invokes
 
 - [Source Directory Map](/openwiki/architecture/source-map.md) — source ownership, emitted routes, navigation, redirects, and deployment-generated API surfaces.
 - [Adding and Maintaining Documentation Pages](/openwiki/operations/adding-pages.md) — add, move, retire, or regroup a page without losing navigation or public routes.
+- [LangSmith Evaluation Documentation Domain](/openwiki/concepts/langsmith-evaluation.md) — offline and online targets, evaluator lifecycle, attachments, and implementation boundaries.
+- [Changing LangSmith Evaluator Documentation](/openwiki/workflows/langsmith-evaluator-documentation.md) — connected evaluation-guide edits, UI/SDK scope, provider constraints, and validation.
 - [Changing Versioned Content](/openwiki/workflows/versioned-content.md) — shared versus language-specific changes, links, snippets, and output-variant inspection.
 - [Mintlify Integration](/openwiki/integrations/mintlify.md) — renderer handoff, deployment-generated OpenAPI, and local-validation limits.
-- [Integration Listing Automation](/openwiki/workflows/integration-listing-automation.md) — metadata, generated listings, URL safety, and scheduled refresh automation.
 - [Testing Overview](/openwiki/testing/test-overview.md) — validation boundaries and CI coverage.
+- [Integration Listing Automation](/openwiki/workflows/integration-listing-automation.md) — metadata, generated listings, URL safety, and scheduled refresh automation.
 - [Build System Architecture](/openwiki/architecture/build-system.md) and [Preprocessing](/openwiki/concepts/preprocessing.md) — builder orchestration and content transformations.
 - [Code Sample Lifecycle](/openwiki/workflows/code-sample-lifecycle.md) — runnable samples, snippet extraction, tracing, and generated output.

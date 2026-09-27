@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:01d948cf676841e1fb0c1e31da91891a7a8bacb5bf0b6e5bef03048f8acd7afc",
+  "pageVersion": "sha256:dcb3f0238ddbca0535ba23d47233f5698fb64273586e1aec31205d30d5d2645c",
   "claims": [
     {
       "id": "claim_d8d8a35bd795404f8072491acc9f3276",
@@ -147,20 +147,6 @@
       ]
     },
     {
-      "id": "claim_7de4c2a77db548e3ba901375c8e94487",
-      "statement": "The site navigation has two products. AGENT DEVELOPMENT LIFECYCLE contains Home, Build, Test, Deploy, and Monitor; PRODUCTS AND SETUP contains LangSmith setup, LLM Gateway, No-code agents, Engine, and Deep Agents Code. Navigation labels are independent from source directories, including the No-code agents label for `src/langsmith/fleet/`.",
-      "evidence": [
-        {
-          "resource": "repo://AGENTS.md#L108-L214",
-          "version": "repo-lines-v1:sha256:be4c93867b2ae0f025241856e76e3eb7543a395c0530f76696f4c81d97df2268:eyJzZWxlY3RlZExpbmVDb3VudCI6MTA3LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJiOGMxMjlmMDM5YmNiYzFiMWY1MWNhZWU0YjE5NGQ2NWJlMjQxY2MyMTM5ZWM3YzVhYTIzYzVlMWQxY2IyOGFiIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJiYzgwZjI0ZDA0ZTc3OGY5NzNmZDAwNjNhMWRlYzUxYjQ2YmU2NTFiNWM3YzhmMTg4YzJkZWE3NGRmNjlkZDkxIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI1OTQ1NzBlOTQ4OTNhMmY1ODAwYzAxMTM1ODIwZWVkYWVkNjE1NTIwNWEzN2FjMWExZDM2ZTk5ZmNhODNkNmIxIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI2YjQ5M2IyZDc0YWU4ZDdiZjkxODE2Njg0ZjEyN2RhOWFiZTZlN2MzNWMyMTg1MmZjNDI0NTcxNTFkMTVlYjA1In0"
-        },
-        {
-          "resource": "repo://src/docs.json",
-          "version": "repo-file-v1:sha256:dfa8f2781765f4e233d51d5395084bdbbc6641112864b111d656c48eca087b40"
-        }
-      ]
-    },
-    {
       "id": "claim_919f2717c4a0442889cbcda5087da76e",
       "statement": "Mintlify generates configured OpenAPI endpoint reference pages at deployment time, so they are neither authored MDX pages nor present in local build output.",
       "evidence": [
@@ -170,7 +156,7 @@
         },
         {
           "resource": "repo://src/docs.json",
-          "version": "repo-file-v1:sha256:dfa8f2781765f4e233d51d5395084bdbbc6641112864b111d656c48eca087b40"
+          "version": "repo-file-v1:sha256:2ab014af6282fa817a74a96dbf9be7aeae32c07ae5d337cc9ed1f6ce8129888a"
         }
       ]
     },
@@ -221,10 +207,56 @@
           "version": "repo-lines-v1:sha256:d7a6b729d12dccabb0c784a295295b7fda1d265d6f7f0117e3a3a865a9589116:eyJzZWxlY3RlZExpbmVDb3VudCI6MzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRmODBlZGJkYmYwYWJhMzA1MzFhMTFhZDZlMjg5NWRhNjhhNDc0YWJjZTAxMzcwNDk3MjNkNmI0NWM3NmM2YWYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY2ZjdlMzA4MzM5NGE1Yjk4NzgwMjUzZDE3ZDA3ODA3ZGVmOWFhNTU0NDhkNjFkYjczZWMwMTNmMzcyNjYxZDciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjBiZTdiYjRiODUwMmJmYjA3ODg0M2U1NGM5YmUzZWQwZWI4MmQ3NzQ1YWQwZTM3MmFjZGI4MTJjN2Y1NTI2M2EiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjAzNmE4ZDQ2ZGNmMTI2NDI1OTdjYTdhYTYxM2FmOTE5NDExMmVlMGMxMDlhNmFmNjA0MDYxNzJkNzIyMDllNmUifQ"
         }
       ]
+    },
+    {
+      "id": "claim_e3fed6531c214c21826df2654752815b",
+      "statement": "The navigation places LangSmith evaluation introductions in Test → Get started, dataset and experiment workflows in Test → Datasets & Experiments, evaluator management and implementation pages in Test → Evaluators, and production evaluator setup in Monitor → Observe → Online evaluators.",
+      "evidence": [
+        {
+          "resource": "repo://src/docs.json#L1385-L1578",
+          "version": "repo-lines-v1:sha256:9edccbadbb38ad3f77ae1cef06e07795c1f8678dff11638b5ad341d8aa1684b3:eyJzZWxlY3RlZExpbmVDb3VudCI6MTk0LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI5ZjhhMThhOGZiZTIyMjM3ZTE4NThkZGVjYjg3NzcyNjVmMGE4MGM5YTdkYmE2OGNmOWNkNTYzMDI2ZDBjNjllIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIxNGZjMDNkZjg1YjE1NzI3ZDg0ZGQ0YmFmNjk1YmM2MTY5ZTgxOTE0N2NmOTQ3N2M0YjRhZTYzNmI2ZmZmN2IyIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJlNDg1YjNkNDY4MzliZWZkYjczMzJlMGQwNWE1M2VhZDE4MzNmNGE2YTZmYjM0NTY2MGM4NjkxNmY0YjIwYmJhIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI3NWI0ZDZhMzI0MjgyYTkwOWFiODE1NTBlZTFjMWQzMGEyZDllMWVkOGVlMmI4YTg1YmMwZDdjYWU0ZTFmYmYwIn0"
+        },
+        {
+          "resource": "repo://src/docs.json#L2111-L2140",
+          "version": "repo-lines-v1:sha256:8a9703c880c2c93ebb0bdad1ff3c8f42862000a6547c0387955e5c09039ad3ac:eyJzZWxlY3RlZExpbmVDb3VudCI6MzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjEwYzc5YmZjMzFiNzhkOGIxM2ZiZWZkYWNmNjA1Y2YzM2UyOWE1ZWVmYWQwYTcxN2VkMTg5ODIwNWE5NjI3ZTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZjNGYwNjU4ZTI1M2VkZDkzMTg0NTY1NWI4YmY5NzYxMDdjMzgxZWJjMmYyNjc3YjVkOWM2NjZiZWY2ZjUxZWMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA4MjQwNjRhMjg2ZGVlOTMzMGQ1ZGQyYTg1OGE3ZDY2MTVhZWQzYWI0YTI0YWQ4YWYyZGI2ZGJjNjkzMmJkOTciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijk0YjE5OTNlNDVmMDc0NjJjMmJjYWI2ZTgxODNiYTYxY2IyY2I1OGE0YzE2NGRlZTI5ZTQ2NzUzMDZkMTEwOTcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_0b506a279e9449f995c3dce35b991e6c",
+      "statement": "LangSmith distinguishes offline evaluation of dataset examples, which can use reference outputs, from online evaluation of production runs and threads without reference outputs. Evaluators are workspace-level resources that can be attached to multiple tracing projects and datasets.",
+      "evidence": [
+        {
+          "resource": "repo://src/langsmith/evaluation-concepts.mdx#L162-L186",
+          "version": "repo-lines-v1:sha256:d61bf359078781fcfe241e9f057bd0523e7216e923f57fd68cad6e5ec4972517:eyJzZWxlY3RlZExpbmVDb3VudCI6MjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZiMzNiYjM4YzM2Yjk3M2M1Y2M0ZWRlMTAwN2FkNjBlODgzMDQ5MGNjZTYzZmM4Y2JlODhlNzg0M2Y5NjA3N2IiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU3ZDhiNjUzNzg2YTgyNDk2NGFiYjI4OWJiMjQ0NTFlYTcyYTI5MzM3OTA5YTVjOGM3MzI1YjRmMTFjZTAwODciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijc1YzdjZTkwNTAxZGY5YzFkNjRlZmM5Y2FiN2FmNWQ5MjAwOWExYjlkMGM1NzM5Yzc2M2U1Y2U3Nzk5OGE2MjAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijk3MGI1MWQ3MTdiMzMwZjQ2YWRhOWE0N2E4ZWNiMTU0MDgyZjk0ZDE1NDA5ZTE1ZDUxNDYyZjRmMDgxZWYyMTUifQ"
+        },
+        {
+          "resource": "repo://src/langsmith/evaluation-concepts.mdx#L19-L42",
+          "version": "repo-lines-v1:sha256:b249c50b2d2372bba1457ceb5bf539dd5d941db657b611224c026ab06c23280e:eyJzZWxlY3RlZExpbmVDb3VudCI6MjQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFlNDUwMjczOWY4NjRkN2I3NzMyMjNiZTQ3YTRhNmQxMDI4YjY0NWM1MTdiODA0OTAzMmRjN2YxOTc3MWQzNTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImUzYzdiYzZhYTRhOWE4ZmY0YWFmODAxYzI0ZmRjMmM1YjE3NzA5Yjk3MzQzYjcxNWIzMTMwYzNjNWIyYTg4YjgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjE4MTQ3M2QwYWQ5N2FlODhiMjY5N2Y3OGIxYWYxMWU0NmU3ZDAwN2JkMmU3Yjc1YjViZmZiNjhhNTM1ZDViZmUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjMwZTRjOGI5MjJjZDFiYWFhMjkyYWYzMDM3NThmZjI0MjU5OWM3ZjczZWEzZDgwM2E3ODdhZDVhN2U1NDFkNzIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_908388d8bb694f5284bf630fd6b8fd2a",
+      "statement": "The scheduled LangSmith OpenAPI refresh fetches and post-processes the platform specification into `src/langsmith/langsmith-platform-openapi.json`, hiding fleet and internal operations for public documentation and updating one standing refresh pull request when the specification changes.",
+      "evidence": [
+        {
+          "resource": "repo://.github/workflows/refresh-langsmith-openapi.yml#L4-L113",
+          "version": "repo-lines-v1:sha256:170bb513b5f65b1e10a60d27ed203fa5ddacff898a2141d22843d7f6a3ca216a:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEwLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJlOTZkYzQ4MTQ5ZjVhODNkMWVkNmRiYjM5YmJjN2UyYjkwMmFhM2QzNGQ2YmQ1YWU0YjI5MWI2OGRmMGNhNzlhIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI2N2QyMmZhMTdjZTNjM2RmMmY3NmYwODdkZGQ2MjljMWE1YWM5YWVhNmM3M2NkY2Y1YmM0OTMxMDQ0Y2I3MzI0IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIyMmMyMDBjOTE0ODg2MmJlNjRlY2EyMTA5ZDYwNTllY2M4MGZiOGFhZjBjYmE0Yjg3OTUwYjBjMTNhYjQ1NmNjIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MCwiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0"
+        },
+        {
+          "resource": "repo://scripts/process_langsmith_openapi.py#L2-L6",
+          "version": "repo-lines-v1:sha256:7779437672e66e5242610dee1f77c9b2596d4abb88452be333cd675bedb0b05d:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMjI0Mjc5M2MyNTk4ZjhmY2VlOTZiNWI1ODUzOTA4OWU3YmI0MmFhMzdlZmMyZWE3NTU5ZDc3MWIwOWZkMGFhMSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiODUyMDI3NTFjYTRlMmM2YWRhOGRiZDVkZDAxMjZlZDQwM2QwYjFjNzBiODNkMTM5ODk5ZjZlODY2ZjI2MmE4NiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjEsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZDY4MmNiZGI0YzhiMDc1MThiZjQ4NmM1ODk5MGZjMzkxNzgzYWEyMGE5MTZiZmIyN2FkMjExZWIxZDVjMzY0MiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMmUwNzdlYjkwOTdhNDY4YWNlOTA5ZjNjZjBhZDhjNTcwYzA3MTg5ZGI5NTg5MjlhM2JkNGY0ZTA0MGFlYWE3OCJ9"
+        },
+        {
+          "resource": "repo://scripts/process_langsmith_openapi.py#L39-L92",
+          "version": "repo-lines-v1:sha256:7b106b24f5cc6f80e35a355f1f24dd5c2c070d6fae1a7c64ea5f1a32003517e4:eyJzZWxlY3RlZExpbmVDb3VudCI6NTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjIzMjQ3YjY5MjIxODI2NTE0ZDllYjM1OWE0NDAwMTc3YWMxOTk0MmYwMjBhYzZiNmY3MTIwOTFhNDE4OWVmNDAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImUyYmI5YzZjZmQ2MGIyNzZjOWJlZTFjNjNmZGRlZjY5ZWVhYWIxMmUzYjI0MWM0Mzg0OWFmOTM0YTc4MGMxNmYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjU0MTc5MzhhOWJhYmRhMjgzYWRjNzU4Zjc4YTVkZjFhNzViZGQxZjEzY2EzZTFjZDAyOWNkNjNmNDYxMDQzYzYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjJmMTlmZjYyYzYzMWVkYzNiZDRlNDQ3MzA0NTRmMGUyZWQ3NWFkYjE2Y2ZhMDIwYTlkNGEyZWMxM2EyNzdjYjgifQ"
+        }
+      ]
     }
   ],
   "verification": {
     "by": "openwiki/0.4.3",
-    "at": "2026-09-25T08:22:07.006Z"
+    "at": "2026-09-27T08:19:59.833Z"
   }
 }

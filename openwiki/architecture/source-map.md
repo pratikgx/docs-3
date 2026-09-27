@@ -1,11 +1,11 @@
 ---
 type: architecture reference
 title: Source Directory Map
-description: Maps authored documentation and site configuration to emitted routes and Mintlify navigation. Explains language-specific OSS routes, Managed Deep Agents variants, and LangSmith product surfaces.
+description: Maps authored documentation and site configuration to emitted routes and Mintlify navigation. Explains language-specific OSS routes, Managed Deep Agents variants, LangSmith evaluation navigation, and deployment-generated API reference.
 tags: [documentation, routing, navigation, mintlify]
 verified:
   - by: openwiki/0.4.3
-    at: 2026-09-25T08:22:07.006Z
+    at: 2026-09-27T08:19:59.833Z
 sources:
   - id: openwiki-source-8037e2358a2c4f9b2c722a11
     resource: repo://AGENTS.md
@@ -19,6 +19,14 @@ sources:
     resource: repo://src/langsmith/engine-overview.mdx
   - id: openwiki-source-6ee73af37434175c0178fc98
     resource: repo://src/langsmith/engine.mdx
+  - id: openwiki-source-569fb47090d7bb01ef2ae200
+    resource: repo://src/langsmith/evaluation-concepts.mdx
+  - id: openwiki-source-8eb7aaffcceefb1353b6e2e1
+    resource: repo://src/langsmith/evaluation-types.mdx
+  - id: openwiki-source-76efa23a41bf3a2a1adf183a
+    resource: repo://src/langsmith/evaluators.mdx
+  - id: openwiki-source-8ec333014c0f5157305fe9c8
+    resource: repo://src/langsmith/langsmith-platform-openapi.json
   - id: openwiki-source-222b22691fa5b319ecd2ae6f
     resource: repo://src/oss/deepagents/code/configuration.mdx
   - id: openwiki-source-e1f26a142b8ca9ee7ab7d740
@@ -27,7 +35,7 @@ sources:
     resource: repo://src/oss/python/integrations/long-term-memory/index.mdx
   - id: openwiki-source-24e5f74f0f40e9bfd381871f
     resource: repo://tests/unit_tests/test_builder.py
-generated: { by: "openwiki/0.4.3", at: "2026-09-25T08:22:07.006Z" }
+generated: { by: "openwiki/0.4.3", at: "2026-09-27T08:19:59.833Z" }
 ---
 
 `src/` is an authored-content tree, not the public site map. `DocumentationBuilder` materializes supported inputs in `build/`; `src/docs.json` separately declares Mintlify navigation, redirects, and OpenAPI configuration. A route can therefore be emitted but unlisted, listed under a label unrelated to its directory, or listed in more than one navigation location. For example, `src/langsmith/fleet/` maps to `/langsmith/fleet/` but appears as **No-code agents**.
@@ -65,7 +73,7 @@ This diagram separates builder-owned route emission from Mintlify presentation a
 | `src/oss/python/` and `src/oss/javascript/` | Only the corresponding language route tree | The source-language segment is removed from the output path; the other language subtree is skipped. |
 | `src/oss/openwiki/` | `/oss/openwiki/...` once | Python conditional-content branch; no language copies. |
 | `src/oss/deepagents/code/` | `/oss/deepagents/code/...` once | Python conditional-content branch; no language copies. |
-| Ordinary `src/langsmith/` files | `/langsmith/...` | Built through the Python target, including ordinary product pages such as Engine. |
+| Ordinary `src/langsmith/` files | `/langsmith/...` | Built through the Python target, including Test, Deploy, Monitor, setup, and Engine pages. |
 | Direct `src/langsmith/managed-deep-agents*.mdx` files | `/langsmith/python/...` and `/langsmith/javascript/...` | Excluded from ordinary unversioned LangSmith emission. |
 | `src/snippets/` | Importable MDX and component inputs | Snippets are shared inputs, not navigation pages. |
 | Images, fonts, `.well-known`, root CSS/JS, and `docs.json` | Corresponding shared build paths | Site assets and configuration are copied once. |
@@ -87,13 +95,25 @@ Important projections in the current navigation are:
 - **Deep Agents Code** is an unversioned **Products and setup** item. Its expanded Configuration group is rooted at `oss/deepagents/code/configuration` and contains credentials, config file, hooks, and MCP tools. The configuration landing page documents separate resolution orders for general options, provider API keys, dotenv files, and provider endpoints.
 - **Engine** is a distinct **Products and setup** item with six flat routes: `langsmith/engine-overview`, `engine`, `engine-github`, `engine-notifications`, `engine-security`, and `engine-self-hosted`. The overview positions it as the LangSmith agent for agent engineering; the operational page documents a closed issue lifecycle from recurring trace detection through diagnosis, proposed pull request, tracking/dataset generation, and automatic reopening when the issue resurfaces.
 
+### LangSmith evaluation surface
+
+The Test menu makes evaluation concepts and evaluator management separate navigation responsibilities even though they share the flat `src/langsmith/` source directory:
+
+- **Get started** contains `evaluation`, `evaluation-quickstart`, `evaluation-concepts`, and `evaluation-approaches`. `evaluation-concepts` establishes the lifecycle distinction: offline evaluation works against dataset examples with optional reference outputs, while online evaluation works against production runs and threads without reference outputs.
+- **Datasets & Experiments** owns dataset creation, running an evaluation, target and scoring techniques, experiment configuration and analysis, tutorials, and common data types.
+- **Evaluators** begins with `evaluation-types`, `evaluators`, SDK management, dataset binding, and evaluator spend. It then divides extension routes into **Evaluator types** (UI and SDK), **Frameworks & integrations**, and **Improve evaluators**. Keep a new evaluator-management or implementation page in this tab; do not infer its position from the `langsmith/` filename.
+
+`evaluators.mdx` documents reusable workspace-level evaluators. An evaluator can attach to multiple tracing projects and datasets, whereas attachment-specific configuration such as sampling, filters, spend limits, and online trace-retention behavior belongs to the attachment. In particular, an evaluator cannot be deleted while attached; detach it from every project or dataset first.
+
 ### Language-specific Integration groups
 
-The Build **Integrations** tab is intentionally different per dropdown, not merely a label swap. Python has **Popular Providers** and **Integrations by component**. The latter includes both `oss/python/integrations/checkpointers/index` and `oss/python/integrations/long-term-memory/index`: checkpointers persist and resume LangGraph state, while stores persist and retrieve long-term memory across threads. TypeScript has **Popular Providers**, **General integrations**, and **RAG integrations**; its General group includes long-term memory and stores, and stores also appears in RAG. Place an integration in the matching language subtree and explicitly add its emitted route to the appropriate group.
+The Build **Integrations** tab is intentionally different per dropdown, not merely a label swap. Python has **Popular Providers** and **Integrations by component**. The latter includes both `oss/python/integrations/checkpointers/index` and `oss/python/integrations/long-term-memory/index`: checkpointers persist and resume LangGraph state, while stores persist and retrieve long-term memory across threads. TypeScript has **Popular Providers**, **General integrations**, and **RAG integrations**. Place an integration in the matching language subtree and explicitly add its emitted route to the appropriate group.
 
 ### Managed Deep Agents variants and redirects
 
-A direct `managed-deep-agents*.mdx` source has two emitted variants. `docs.json` lists the Python variants in the Python Build **Managed Deep Agents** tab and the JavaScript variants in the TypeScript tab. It redirects unversioned Managed Deep Agents URLs—including `/langsmith/managed-deep-agents-overview`—to the Python routes; many prior unversioned capability URLs similarly redirect to their Python counterpart. Do not add an unversioned MDX duplicate: the builder deliberately omits it, avoiding a route outside the managed navigation.
+A direct `managed-deep-agents*.mdx` source has two emitted variants. `docs.json` lists the Python variants in the Python Build **Managed Deep Agents** tab and the JavaScript variants in the TypeScript tab; each has **Get started**, **Agent capabilities**, and **Build and deploy** groups. The deploy page is consequently one authored source with Python and JavaScript CLI fences, rather than two independently maintained pages.
+
+`docs.json` redirects unversioned Managed Deep Agents URLs—including `/langsmith/managed-deep-agents-overview` and `/langsmith/managed-deep-agents-deploy`—to Python routes. Do not add an unversioned MDX duplicate: the builder deliberately omits it, avoiding a route outside the managed navigation.
 
 ## OpenAPI and generated inputs
 
@@ -105,7 +125,7 @@ A direct `managed-deep-agents*.mdx` source has two emitted variants. `docs.json`
 | Control Plane API | Remote `https://api.host.langchain.com/openapi.json` | Mintlify reference surface |
 | LangSmith REST API | Committed `src/langsmith/langsmith-platform-openapi.json` | `/langsmith/smith-api/` |
 
-Mintlify creates endpoint pages during deployment; they are not authored MDX. For locally sourced OpenAPI groups with a `directory`, the builder derives `llms` index entries from the specification, omits hidden operations, and skips unavailable or outside-build specifications.
+The LangSmith REST input declares an OpenAPI 3.1 LangSmith API and documents API-key authentication through `X-Api-Key`; it is a committed specification input, not authored endpoint MDX. Mintlify creates endpoint pages during deployment. For locally sourced OpenAPI groups with a `directory`, the builder derives `llms` index entries from the specification, omits hidden operations, and skips unavailable or outside-build specifications.
 
 ## Invariants, validation, and safe changes
 
@@ -118,13 +138,13 @@ Mintlify creates endpoint pages during deployment; they are not authored MDX. Fo
 1. Begin with the required public route and identify its emission family; do not infer it from a menu label.
 2. For normal shared OSS content, check Python and TypeScript output. For OpenWiki and Deep Agents Code, check only the unversioned output.
 3. Update route emission and `docs.json` placement independently. Keep the two OpenWiki presentations aligned.
-4. For integrations, choose the matching source-language subtree and the current language-specific group; checkpointer and long-term-memory landing pages belong to Python's component group.
+4. For evaluation pages, distinguish concepts and datasets/experiments from evaluator implementation and management, then place the route in the Test tab and group named by `docs.json`.
 5. For Managed Deep Agents, add or change the source once, validate both language variants, and preserve the unversioned-to-Python redirect convention.
-6. For Engine, retain the six-route product surface in **Products and setup** when adding, moving, or retiring Engine pages.
-7. For API reference, change the spec/configuration rather than adding endpoint MDX; run focused tests and link checks before relying on the route or redirect.
+6. For API reference, change the spec/configuration rather than adding endpoint MDX; run focused tests and link checks before relying on the route or redirect.
 
 ## Related pages
 
+- [LangSmith evaluation](/openwiki/concepts/langsmith-evaluation.md)
 - [Versioning](/openwiki/concepts/versioning.md)
 - [Mintlify integration](/openwiki/integrations/mintlify.md)
 - [Adding pages](/openwiki/operations/adding-pages.md)

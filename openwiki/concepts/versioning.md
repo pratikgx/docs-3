@@ -3,9 +3,6 @@ type: documentation route model
 title: Versioned Documentation and Routes
 description: Explains how the documentation builder emits Python, JavaScript, and language-agnostic routes, with special coverage for the Managed Deep Agents route family, navigation, bare-link rewriting, and legacy redirects.
 tags: [documentation-pipeline, routes, language-versioning, redirects]
-verified:
-  - by: openwiki/0.4.3
-    at: 2026-09-25T08:22:07.006Z
 sources:
   - id: openwiki-source-d0cdf44431684bdedf34705a
     resource: repo://pipeline/core/builder.py
@@ -23,7 +20,10 @@ sources:
     resource: repo://src/language-toggle.js
   - id: openwiki-source-24e5f74f0f40e9bfd381871f
     resource: repo://tests/unit_tests/test_builder.py
-generated: { by: "openwiki/0.4.3", at: "2026-09-25T08:22:07.006Z" }
+generated: { by: "openwiki/0.4.3", at: "2026-09-27T08:19:59.833Z" }
+verified:
+  - by: openwiki/0.4.3
+    at: 2026-09-27T08:19:59.833Z
 ---
 
 # Versioned Documentation and Routes
@@ -34,7 +34,7 @@ generated: { by: "openwiki/0.4.3", at: "2026-09-25T08:22:07.006Z" }
 
 | Source family | Output routes | Target used for preprocessing |
 | --- | --- | --- |
-| Ordinary `src/oss/` content, including LangChain, LangGraph, and Deep Agents outside `code/` | `/oss/python/...` and `/oss/javascript/...` | `python` and `js` respectively |
+| Ordinary `src/oss/` content outside the language-agnostic `deepagents/code/` and `openwiki/` roots, including LangChain, LangGraph, and other Deep Agents pages | `/oss/python/...` and `/oss/javascript/...` | `python` and `js` respectively |
 | `src/oss/python/...` or `src/oss/javascript/...` | Only the matching output family, without the source-language path component | Matching target only |
 | `src/oss/deepagents/code/...` | `/oss/deepagents/code/...` | `python` fallback |
 | `src/oss/openwiki/...` | `/oss/openwiki/...` | `python` fallback |

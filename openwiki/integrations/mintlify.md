@@ -5,7 +5,7 @@ description: Mintlify renders and deploys the generated documentation tree using
 tags: [mintlify, documentation, navigation, redirects, deployment]
 verified:
   - by: openwiki/0.4.3
-    at: 2026-09-25T08:22:07.006Z
+    at: 2026-09-27T08:19:59.833Z
 sources:
   - id: openwiki-source-5c124605ed6e394bffee862c
     resource: repo://.github/workflows/_check-links.yml
@@ -29,6 +29,8 @@ sources:
     resource: repo://README.md
   - id: openwiki-source-49f717adb7cc59501f5c17ac
     resource: repo://scripts/filter_mint_broken_links.py
+  - id: openwiki-source-697851c98229599f97376bfb
+    resource: repo://scripts/process_langsmith_openapi.py
   - id: openwiki-source-a9a8730b7e43a5ad2d0af4f1
     resource: repo://src/docs.json
   - id: openwiki-source-17568d22d2c267ddd66b7112
@@ -37,7 +39,7 @@ sources:
     resource: repo://src/langsmith/engine.mdx
   - id: openwiki-source-38d325b9c51f3c8dfd528917
     resource: repo://tests/unit_tests/test_filter_mint_broken_links.py
-generated: { by: "openwiki/0.4.3", at: "2026-09-25T08:22:07.006Z" }
+generated: { by: "openwiki/0.4.3", at: "2026-09-27T08:19:59.833Z" }
 ---
 
 # Mintlify Integration
@@ -57,7 +59,7 @@ flowchart TD
     Mint --> Site["docs.langchain.com"]
 ```
 
-This flow separates editable inputs from the generated handoff. Mintlify combines `build/` and deployment-time OpenAPI generation; the endpoint pages it produces are not authored files and cannot be established by inspecting a local build.
+This flow separates editable inputs from the generated handoff. Mintlify combines `build/` with deployment-time OpenAPI generation; the endpoint pages it produces are not authored files and cannot be established by inspecting a local build.
 
 ## Build-to-renderer handoff
 
@@ -69,7 +71,7 @@ This route model matters when changing navigation:
 - **Deep Agents Code** is emitted once at `/oss/deepagents/code/...` and is excluded from OSS language-link rewriting. It is not a Python/JavaScript duplicate.
 - Ordinary LangSmith pages, including the Engine pages, remain unversioned under `/langsmith/...`.
 
-When moving a page, reconcile its source/output route, its `src/docs.json` navigation entry, and any redirect in one change. See [Source map](/openwiki/architecture/source-map.md), [Versioning](/openwiki/concepts/versioning.md), and [Adding pages](/openwiki/operations/adding-pages.md).
+When moving a page, reconcile its source/output route, its `src/docs.json` navigation entry, and any redirect in one change. See [Source map](/openwiki/architecture/source-map.md), [Adding pages](/openwiki/operations/adding-pages.md), and [Quickstart](/openwiki/quickstart.md).
 
 ## `src/docs.json`: presentation, navigation, and redirects
 
@@ -84,7 +86,7 @@ Do not infer a source path from a menu label: for example, No-code agents is bac
 
 ### Managed Deep Agents redirect contract
 
-Managed Deep Agents pages have a dual language navigation surface, while compatibility URLs select Python. `docs.json` lists matching Python and JavaScript route families in their respective Build tabs, but maps the unversioned overview and individual Managed Deep Agents paths to their Python equivalents. Add a new managed page to both language tabs and add or preserve an unversioned-to-Python redirect when it has a public legacy route. Do not create a duplicate unversioned MDX page merely to satisfy an old URL.
+Managed Deep Agents pages have a dual language navigation surface, while compatibility URLs select Python. `docs.json` lists matching Python and JavaScript route families in their respective Build tabs, but maps unversioned overview and individual Managed Deep Agents paths to their Python equivalents. Add a new managed page to both language tabs and add or preserve an unversioned-to-Python redirect when it has a public legacy route. Do not create a duplicate unversioned MDX page merely to satisfy an old URL.
 
 ## OpenAPI specifications are inputs, not authored endpoint pages
 
@@ -96,9 +98,15 @@ Managed Deep Agents pages have a dual language navigation surface, while compati
 | Control Plane API | `https://api.host.langchain.com/openapi.json` | Remote specification fetched at deployment; no `directory` is configured. |
 | LangSmith REST API | Committed `src/langsmith/langsmith-platform-openapi.json` | `directory: langsmith/smith-api` |
 
-Mintlify creates the endpoint routes during deployment. Consequently, an endpoint is neither an MDX source file nor a reliable local-build artifact. The Control Plane reference also introduces a remote deployment-time dependency. The LangSmith REST input is refreshed daily by an automation workflow that processes the spec and opens or updates one standing refresh PR.
+Mintlify creates endpoint routes for these sections during deployment. Consequently, an endpoint is neither an MDX source file nor a reliable local-build artifact. The Control Plane reference also introduces a remote deployment-time dependency. Change the committed specification or the OpenAPI configuration rather than inventing generated MDX pages.
 
-`make check-openapi` is deliberately narrower: after rebuilding, it runs `mint openapi-check langsmith/agent-server-openapi.json` from `build/`. It does not prove deployment generation of any endpoint reference. Change the committed specification or the OpenAPI configuration rather than inventing generated MDX pages. See [Reference docs](/openwiki/integrations/reference-docs.md) for the boundary with API reference outside this repository.
+### LangSmith REST refresh lifecycle
+
+The scheduled workflow runs daily at 10:00 UTC, and can also be dispatched manually. It runs `scripts/process_langsmith_openapi.py --write`, which fetches only from the allow-listed `api.smith.langchain.com` host and writes the committed LangSmith REST specification. Processing marks fleet, internal, and selected low-value operations hidden; normalizes endpoint titles; attaches human-readable tag groups; and sorts those groups for the generated sidebar.
+
+If the specification changed, automation reuses the open `chore/refresh-langsmith-openapi` PR when one exists; otherwise it creates the branch and PR. Thus repeated daily runs update one outstanding review surface rather than opening a stack of refresh PRs. Review the resulting JSON and its generated deployment reference as a specification change, not as authored MDX.
+
+`make check-openapi` is deliberately narrower: after rebuilding, it runs `mint openapi-check langsmith/agent-server-openapi.json` from `build/`. It does not validate the LangSmith REST or Control Plane inputs, and it does not prove deployment generation of any endpoint reference. See [Reference docs](/openwiki/integrations/reference-docs.md) for the boundary with API reference outside this repository.
 
 ## Local preview and validation
 
@@ -147,7 +155,7 @@ For same-repository pull requests, the preview workflow builds the documentation
 ## Related concepts
 
 - [Source map](/openwiki/architecture/source-map.md) — source paths, URLs, and build output mapping.
-- [Versioning](/openwiki/concepts/versioning.md) — language-specific and unversioned route rules.
+- [Reference docs](/openwiki/integrations/reference-docs.md) — the external API-reference boundary.
 - [Adding pages](/openwiki/operations/adding-pages.md) — safe source, navigation, and route changes.
 - [Quickstart](/openwiki/quickstart.md) — local setup and ownership boundaries.
 - [Testing overview](/openwiki/testing/test-overview.md) — validation boundaries and CI coverage.

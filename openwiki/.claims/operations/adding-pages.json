@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:6796483d53e13bb08c3fc349b7ceed8ca8068b649ce1e9f7aaf270328c345f6c",
+  "pageVersion": "sha256:955a7316cb186dc31db66dc0cdf1d425ad13dcc518e8f8f2c56a35f8e339048d",
   "claims": [
     {
       "id": "claim_50d5f754af2648b1a22070a9b6535576",
@@ -98,7 +98,7 @@
         },
         {
           "resource": "repo://src/docs.json",
-          "version": "repo-file-v1:sha256:dfa8f2781765f4e233d51d5395084bdbbc6641112864b111d656c48eca087b40"
+          "version": "repo-file-v1:sha256:2ab014af6282fa817a74a96dbf9be7aeae32c07ae5d337cc9ed1f6ce8129888a"
         }
       ]
     },
@@ -293,10 +293,34 @@
           "version": "repo-lines-v1:sha256:47d5f7c3233e058215509af4a1202c2126a94896c10daf2a54a1a02a09236a7d:eyJzZWxlY3RlZExpbmVDb3VudCI6MjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdkYmEyNTNiY2ZiNmUwYmZhZWM4OTRmMTVkM2VhNzBhZDVhYzhmOGU0YjQwODczM2E4MWE4NTk2N2QxYzkzMzAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI1MTZjODA3NWU2MDdiOTk1MDBjNTQ1NzI3ZDQzMzM0ZTRkMWI1ODAwNGM1ZjhkMjMzMTY3Y2VhNjY1MmQ5NmMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjRlYWExMTAxY2I3Y2EzYTg4YzE4YWI1MzRmMGM1MjFjMzI4Nzk5NWJkMDlkNGQxMzYzYTdhNDk0MDk0MjdiMzQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjhjOGU5NDUxOWJmZWI1Njg0YmYzOTY2Yzg1NTdiMzIwNGE2ZDA4MDQ0NjIwMTViM2UwY2YxMzFlMGVmMDU0NTgifQ"
         }
       ]
+    },
+    {
+      "id": "claim_00e66b27f2eb4dc48395377840e17626",
+      "statement": "Ordinary LangSmith evaluation pages use unversioned `langsmith/...` navigation routes: `evaluation-concepts` is in the Test menu's Get started tab, and `decision-model-evaluator` is in Test → Evaluators → Evaluator types → UI.",
+      "evidence": [
+        {
+          "resource": "repo://src/docs.json#L1385-L1397",
+          "version": "repo-lines-v1:sha256:9f085b3f5ba88413f0f8b8aea5e71f09c4c1b576c175b7702feee8275f4d609a:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjlmOGExOGE4ZmJlMjIyMzdlMTg1OGRkZWNiODc3NzI2NWYwYTgwYzlhN2RiYTY4Y2Y5Y2Q1NjMwMjZkMGM2OWUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE0ZmMwM2RmODViMTU3MjdkODRkZDRiYWY2OTViYzYxNjllODE5MTQ3Y2Y5NDc3YzRiNGFlNjM2YjZmZmY3YjIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImU0ODViM2Q0NjgzOWJlZmRiNzMzMmUwZDA1YTUzZWFkMTgzM2Y0YTZhNmZiMzQ1NjYwYzg2OTE2ZjRiMjBiYmEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjZkMjBjYTEyZWVkMmMwMTEyMWQ2YWUzZTdkYmMxNDQxY2U5YzQ3YmRlMGIyNTg3ZWJiZDM5OTMwNzJiYTAxNmIifQ"
+        },
+        {
+          "resource": "repo://src/docs.json#L1505-L1535",
+          "version": "repo-lines-v1:sha256:6b6405d6626b7bb8cce89ae480bdee2814f136b306f73db740259172f09d1693:eyJzZWxlY3RlZExpbmVDb3VudCI6MzEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjEwYzc5YmZjMzFiNzhkOGIxM2ZiZWZkYWNmNjA1Y2YzM2UyOWE1ZWVmYWQwYTcxN2VkMTg5ODIwNWE5NjI3ZTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZhMGE2MDNlMWI5MmZjNTE2MjQ0ZTljYjc5M2Y2NjVmYzJhZDc4Y2Y3NDE0NjZiOTkwZjg5MDhjY2JhMmY0ZmMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA4MjQwNjRhMjg2ZGVlOTMzMGQ1ZGQyYTg1OGE3ZDY2MTVhZWQzYWI0YTI0YWQ4YWYyZGI2ZGJjNjkzMmJkOTciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjBmZDI0MDQyOWZkM2UwOGQ2NmE0ODk5MWM5Yjk5MDdmZDAxNWI1NmY2NGYwZmRjYmYyMmJmZjBhMTBkZmM4ODAifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_bf0e176fb3da4032828f32d93b3ba3a6",
+      "statement": "A docs.json `openapi` navigation group configures generated endpoint pages by naming a specification source and output directory; the LangSmith REST API group uses `langsmith/langsmith-platform-openapi.json` and `langsmith/smith-api`.",
+      "evidence": [
+        {
+          "resource": "repo://src/docs.json#L2163-L2171",
+          "version": "repo-lines-v1:sha256:f595cdc28961335939bc94106cccc9a6da75fce1152a715e7961efb2ac957211:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiM2M1YTAzYmI0MDJmNzc5N2ZmNmE2MGM1NWU1ZWViYjA3NWRlMWZiODA2YWZmYjIwZTQwYjI5MzVhOGViYWQ5OCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNmEwYTYwM2UxYjkyZmM1MTYyNDRlOWNiNzkzZjY2NWZjMmFkNzhjZjc0MTQ2NmI5OTBmODkwOGNjYmEyZjRmYyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMzFiY2I3ZmNmYTI5ODM3MWQ2M2YyYjhkNzMyMmE1NTNhZmJkOTZkNTMyZDc3NjJmNDc4ZTljMjU5NDVhYzIyZiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODJiNGYwZTZiYmYyOTBlODE2ODdhZGI5Y2U4ODQzMWE5NWJmZGI3OWMxMzYxYjVjNjY1ZjMyYjk0YWFmYTc5MCJ9"
+        }
+      ]
     }
   ],
   "verification": {
     "by": "openwiki/0.4.3",
-    "at": "2026-09-25T08:22:07.006Z"
+    "at": "2026-09-27T08:19:59.833Z"
   }
 }
